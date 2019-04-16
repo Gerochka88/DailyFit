@@ -18,6 +18,9 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
     @IBOutlet weak var lblChest: UILabel!
     @IBOutlet weak var lblDate: UILabel!
     @IBOutlet weak var bodyConditionsImageView: UIImageView!
+    @IBOutlet weak var bodyConditionsCollectionView: UICollectionView!
+    
+    private lazy var bodyConditions = [BodyCondition]()
  
     @IBAction func btnChooseImg(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
@@ -99,3 +102,30 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
     //------
 }
 
+private extension BodyConditionsVC {
+    func configureCollectionView() {
+        self.bodyConditionsCollectionView.delegate = self
+        self.bodyConditionsCollectionView.dataSource = self
+        self.bodyConditionsCollectionView.register(ImageCollectionViewCell.self)
+    }
+}
+
+// MARK: - UICollectionViewDelegate
+extension BodyConditionsVC: UICollectionViewDelegate {
+    
+}
+
+// MARK: - UICollectionViewDataSource
+extension BodyConditionsVC: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: ImageCollectionViewCell.self)
+        let bodyCondition = self.bodyConditions[indexPath.item]
+        cell.configure(image: bodyCondition.image)
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return bodyConditions.count
+    }
+}
