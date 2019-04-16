@@ -17,11 +17,17 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
     @IBOutlet weak var lblHeight: UILabel!
     @IBOutlet weak var lblChest: UILabel!
     @IBOutlet weak var lblDate: UILabel!
-    @IBOutlet weak var bodyConditionsImageView: UIImageView!
     @IBOutlet weak var bodyConditionsCollectionView: UICollectionView!
     
     private lazy var bodyConditions = [BodyCondition]()
- 
+    private var currentIndex = 0 {
+        didSet {
+            if oldValue != currentIndex {
+                self.configureUI(for: currentIndex)
+            }
+        }
+    }
+    
     @IBAction func btnChooseImg(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
@@ -40,13 +46,11 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
         }))
         
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-            self.present(actionSheet, animated: true, completion: nil)
-        
-        
+        self.present(actionSheet, animated: true, completion: nil)
     }
     
     @IBAction func btnSaveData(_ sender: Any) {
-      
+        
         scheduleNotification(inSeconds: 5) { (success) in
             if success
             {
@@ -57,21 +61,21 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
             }
         }
     }
-
-
+    
+    
     override func viewDidLoad() {
-    super.viewDidLoad()
-        bodyConditionsImageView.image = #imageLiteral(resourceName: "BodyCondition")
-        lblWeight.text = "88,5 kg"
-        lblHeight.text = "184 cm"
-        lblChest.text = "60 cm"
+        super.viewDidLoad()
         hideKeyboardWhenTappedAround()
-    var preferredStatusBarStyle: UIStatusBarStyle {
+        configureCollectionView()
+        self.bodyConditions = BodyConditionsManager.shared.bodyConditions
+        self.bodyConditionsCollectionView.reloadData()
+        configureUI(for: 0)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
-        
-     }
-      
-  }
+    }
+    
     func scheduleNotification(inSeconds seconds: TimeInterval, completion: (Bool) -> ()) {
         
         removeNotifications(withIdentifiers: ["MyUniqueIdentifier"])
@@ -108,11 +112,24 @@ private extension BodyConditionsVC {
         self.bodyConditionsCollectionView.dataSource = self
         self.bodyConditionsCollectionView.register(ImageCollectionViewCell.self)
     }
+    
+    func configureUI(for index: Int) {
+        guard index < self.bodyConditions.count - 1 else { return }
+        
+        let bodyCondition = self.bodyConditions[index]
+        lblWeight.text = String(bodyCondition.weight.orZero)
+        lblHeight.text = String(bodyCondition.height.orZero)
+        lblChest.text = String(bodyCondition.chest.orZero)
+        lblDate.text = DateFormatterHelper.convertToString(from: bodyCondition.date.orCurrent)
+    }
 }
 
 // MARK: - UICollectionViewDelegate
 extension BodyConditionsVC: UICollectionViewDelegate {
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let index = Int(scrollView.contentOffset.x / scrollView.bounds.size.width)
+        self.currentIndex = index
+    }
 }
 
 // MARK: - UICollectionViewDataSource
@@ -128,4 +145,24 @@ extension BodyConditionsVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return bodyConditions.count
     }
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+extension BodyConditionsVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return collectionView.bounds.size
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
 }

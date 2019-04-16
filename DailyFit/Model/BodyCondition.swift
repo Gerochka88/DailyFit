@@ -16,9 +16,10 @@ final class BodyCondition {
     var biceps: Double?
     var image: UIImage?
     
-    init(date: Date?, weight: Double?, chest: Double?, biceps: Double?, image: UIImage?) {
+    init(date: Date?, weight: Double?, height: Double?, chest: Double?, biceps: Double?, image: UIImage?) {
         self.date = date
         self.weight = weight
+        self.height = height
         self.chest = chest
         self.biceps = biceps
         self.image = image

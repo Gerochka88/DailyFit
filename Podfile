@@ -8,4 +8,5 @@ target 'DailyFit' do
   # Pods for DailyFit
 	pod "Macaw", "0.9.5"
 	pod "FlexiblePageControl"
+	pod 'IQKeyboardManager'
 end

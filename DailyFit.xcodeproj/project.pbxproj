@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		12E8A108E0293CCBC8D14208 /* Pods_DailyFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B2E9DF90C71FF95AD6DE7D /* Pods_DailyFit.framework */; };
+		250521772266317600FBA5E0 /* BodyConditionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250521762266317600FBA5E0 /* BodyConditionsManager.swift */; };
+		250521792266347400FBA5E0 /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250521782266347400FBA5E0 /* DateFormatterHelper.swift */; };
 		257DFBE022662886008B762F /* BodyCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DFBDF22662886008B762F /* BodyCondition.swift */; };
 		257DFBE422662976008B762F /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DFBE222662976008B762F /* ImageCollectionViewCell.swift */; };
 		257DFBE522662976008B762F /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257DFBE322662976008B762F /* ImageCollectionViewCell.xib */; };
@@ -83,6 +85,8 @@
 
 /* Begin PBXFileReference section */
 		19B2E9DF90C71FF95AD6DE7D /* Pods_DailyFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		250521762266317600FBA5E0 /* BodyConditionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyConditionsManager.swift; sourceTree = "<group>"; };
+		250521782266347400FBA5E0 /* DateFormatterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
 		257DFBDF22662886008B762F /* BodyCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyCondition.swift; sourceTree = "<group>"; };
 		257DFBE222662976008B762F /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		257DFBE322662976008B762F /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -174,6 +178,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		250521752266315F00FBA5E0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				250521782266347400FBA5E0 /* DateFormatterHelper.swift */,
+				250521762266317600FBA5E0 /* BodyConditionsManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		257DFBE12266295A008B762F /* ImageCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +283,7 @@
 		73258048223E56EB00F05A90 /* DailyFit */ = {
 			isa = PBXGroup;
 			children = (
+				250521752266315F00FBA5E0 /* Manager */,
 				257DFBE622662997008B762F /* Extensions */,
 				730063EE225C8CD900F8C755 /* DailyFit.entitlements */,
 				73258062223E5A9D00F05A90 /* CustomViews */,
@@ -453,6 +467,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DailyFit/Pods-DailyFit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FlexiblePageControl/FlexiblePageControl.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
@@ -461,6 +476,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexiblePageControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 			);
@@ -493,6 +509,7 @@
 				73D4AC162254EB83005259DF /* UIViewX.swift in Sources */,
 				73258064223E5ACF00F05A90 /* SAButton.swift in Sources */,
 				257DFC0722662997008B762F /* Date.swift in Sources */,
+				250521772266317600FBA5E0 /* BodyConditionsManager.swift in Sources */,
 				257DFC1222662998008B762F /* Int.swift in Sources */,
 				257DFC0A22662997008B762F /* Array.swift in Sources */,
 				257DFC1A22662998008B762F /* UIViewController.swift in Sources */,
@@ -521,6 +538,7 @@
 				73D4AC1E2254EB83005259DF /* UIVisualEffectViewX.swift in Sources */,
 				73D4AC182254EB83005259DF /* UISliderX.swift in Sources */,
 				73D4AC1A2254EB83005259DF /* UIViewXRadialGradient.swift in Sources */,
+				250521792266347400FBA5E0 /* DateFormatterHelper.swift in Sources */,
 				73AF5D012242583B00B201D1 /* GradientBackGroundColor.swift in Sources */,
 				257DFC0622662997008B762F /* TernarWrapper.swift in Sources */,
 				257DFC1122662998008B762F /* UICollectionView.swift in Sources */,

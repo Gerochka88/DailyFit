@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import UserNotifications
+import IQKeyboardManager
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         center.requestAuthorization(options: [.alert,.sound]) { (granted, error) in
             
         }
+        
+        IQKeyboardManager.shared().isEnabled = true
+
         return true
     }
 

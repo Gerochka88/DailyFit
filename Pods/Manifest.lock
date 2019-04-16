@@ -1,24 +1,28 @@
 PODS:
   - FlexiblePageControl (1.0.7)
+  - IQKeyboardManager (6.2.1)
   - Macaw (0.9.5):
     - SWXMLHash
   - SWXMLHash (4.9.0)
 
 DEPENDENCIES:
   - FlexiblePageControl
+  - IQKeyboardManager
   - Macaw (= 0.9.5)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FlexiblePageControl
+    - IQKeyboardManager
     - Macaw
     - SWXMLHash
 
 SPEC CHECKSUMS:
   FlexiblePageControl: 2ce8446da3d75df6432dbad7b9e19151629dae62
+  IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
   Macaw: 10bf9e327cb75f24e3225d5229a80ed544df85f0
   SWXMLHash: 87b0006848a548b7f9485b40bc71721b3ae39add
 
-PODFILE CHECKSUM: 3deabf7cc9980997f057585e2f8f43c53e9ba98d
+PODFILE CHECKSUM: ae492a006c6df1e526ccbd0c75cad4352906761f
 
 COCOAPODS: 1.5.3

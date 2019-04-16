@@ -49,6 +49,8 @@ class ViewController: UIViewController {
         var preferredStatusBarStyle: UIStatusBarStyle {
             return .lightContent
         }
+        
+        [tfPassword, tfUsername].forEach { $0?.delegate = self }
     }
     // MARK: - SetBackGround
     func setBackground() {
@@ -77,5 +79,17 @@ extension UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+}
+
+extension ViewController: UITextFieldDelegate {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        if textField === tfUsername {
+//            tfPassword.becomeFirstResponder()
+//        } else {
+        self.view.endEditing(true)
+//        }
+        
+        return true
     }
 }
