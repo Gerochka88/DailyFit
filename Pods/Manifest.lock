@@ -1,0 +1,33 @@
+PODS:
+  - FlexiblePageControl (1.0.7)
+  - Macaw (0.9.5):
+    - SWXMLHash
+  - SWXMLHash (4.8.0)
+
+DEPENDENCIES:
+  - FlexiblePageControl
+  - Macaw (from `https://github.com/exyte/Macaw.git`, branch `master`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FlexiblePageControl
+    - SWXMLHash
+
+EXTERNAL SOURCES:
+  Macaw:
+    :branch: master
+    :git: https://github.com/exyte/Macaw.git
+
+CHECKOUT OPTIONS:
+  Macaw:
+    :commit: 916240f118690cfdab278095c7f606358a6a000e
+    :git: https://github.com/exyte/Macaw.git
+
+SPEC CHECKSUMS:
+  FlexiblePageControl: 2ce8446da3d75df6432dbad7b9e19151629dae62
+  Macaw: 10bf9e327cb75f24e3225d5229a80ed544df85f0
+  SWXMLHash: 6d0ab74fef35f99156945c8bfe86dd7ead0822aa
+
+PODFILE CHECKSUM: 6b94b45bbdba41314e83e106589a6c0dbbe5f187
+
+COCOAPODS: 1.6.1
