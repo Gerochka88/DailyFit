@@ -1,13 +1,16 @@
 import UIKit
 
-open class ActivityMonitorViewController: UIViewController {
+class ActivityMonitorViewController: UIViewController {
     
     @IBOutlet weak var bestScoreView: BestScoreView!
     @IBOutlet weak var totalStepsView: TotalOfStepsView!
     @IBOutlet weak var runningLevelView: RunningLevelView!
     @IBOutlet weak var dailySummaryView: DailySummaryView!
     
-    open override func viewDidAppear(_ animated: Bool) {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         runningLevelView.completionCallback = {
@@ -20,7 +23,7 @@ open class ActivityMonitorViewController: UIViewController {
         self.perform(#selector(animateViews), with: .none, afterDelay: withDelay)
     }
     
-    @objc open func animateViews() {
+    @objc func animateViews() {
         bestScoreView.play()
         totalStepsView.play()
         runningLevelView.play()
