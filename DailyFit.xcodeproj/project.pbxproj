@@ -58,6 +58,7 @@
 		73258066223E5B8C00F05A90 /* SATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73258065223E5B8C00F05A90 /* SATextField.swift */; };
 		73258068223E90B400F05A90 /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73258067223E90B400F05A90 /* MainMenuVC.swift */; };
 		7325806A223F91AB00F05A90 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73258069223F91AB00F05A90 /* Alert.swift */; };
+		735667EA22667FC100BC0A2A /* AddNewBodyConditionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735667E922667FC100BC0A2A /* AddNewBodyConditionVC.swift */; };
 		739DC93F225FE33A0048221C /* CubicCurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DC93E225FE33A0048221C /* CubicCurveAlgorithm.swift */; };
 		739DC941225FE3880048221C /* ActivityMonitorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DC940225FE3880048221C /* ActivityMonitorVC.swift */; };
 		739DC946225FE3D40048221C /* TotalOfStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DC942225FE3D40048221C /* TotalOfStepsView.swift */; };
@@ -138,6 +139,7 @@
 		73258065223E5B8C00F05A90 /* SATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATextField.swift; sourceTree = "<group>"; };
 		73258067223E90B400F05A90 /* MainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
 		73258069223F91AB00F05A90 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		735667E922667FC100BC0A2A /* AddNewBodyConditionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBodyConditionVC.swift; sourceTree = "<group>"; };
 		739DC93E225FE33A0048221C /* CubicCurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicCurveAlgorithm.swift; sourceTree = "<group>"; };
 		739DC940225FE3880048221C /* ActivityMonitorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityMonitorVC.swift; sourceTree = "<group>"; };
 		739DC942225FE3D40048221C /* TotalOfStepsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalOfStepsView.swift; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 				73D4AC262254ECF3005259DF /* DashBoardVC.swift */,
 				739DC940225FE3880048221C /* ActivityMonitorVC.swift */,
 				730063EF225CA8C600F8C755 /* BodyConditionsVC.swift */,
+				735667E922667FC100BC0A2A /* AddNewBodyConditionVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -364,7 +367,6 @@
 				EC6D25E7C6B223FC840A550B /* Pods-DailyFit.debug.xcconfig */,
 				0B5F1194972FD4D0B7D35D4C /* Pods-DailyFit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -506,6 +508,7 @@
 				73D4AC152254EB83005259DF /* UIImageViewX.swift in Sources */,
 				257DFC0C22662998008B762F /* Functions.swift in Sources */,
 				257DFBE022662886008B762F /* BodyCondition.swift in Sources */,
+				735667EA22667FC100BC0A2A /* AddNewBodyConditionVC.swift in Sources */,
 				257DFC0D22662998008B762F /* UISearchBar.swift in Sources */,
 				257DFC0822662997008B762F /* UIView.swift in Sources */,
 				257DFC1E22662998008B762F /* CGRect.swift in Sources */,

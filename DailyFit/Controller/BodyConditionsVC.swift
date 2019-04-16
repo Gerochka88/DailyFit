@@ -17,7 +17,9 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
     @IBOutlet weak var lblHeight: UILabel!
     @IBOutlet weak var lblChest: UILabel!
     @IBOutlet weak var lblDate: UILabel!
+    @IBOutlet weak var lblBiceps: UILabel!
     @IBOutlet weak var bodyConditionsCollectionView: UICollectionView!
+    
     
     private lazy var bodyConditions = [BodyCondition]()
     private var currentIndex = 0 {
@@ -28,26 +30,7 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
         }
     }
     
-    @IBAction func btnChooseImg(_ sender: Any) {
-        let imagePickerController = UIImagePickerController()
-        imagePickerController.delegate = self
-        
-        
-        let actionSheet = UIAlertController(title: "Photo Source", message: "Choose a source", preferredStyle: .actionSheet)
-        
-        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in
-            imagePickerController.sourceType = .camera
-            self.present(imagePickerController, animated: true, completion: nil)
-        }))
-        
-        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in
-            imagePickerController.sourceType = .photoLibrary
-            self.present(imagePickerController, animated: true, completion: nil)
-        }))
-        
-        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        self.present(actionSheet, animated: true, completion: nil)
-    }
+  
     
     @IBAction func btnSaveData(_ sender: Any) {
         
@@ -62,7 +45,11 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
         }
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.bodyConditions = BodyConditionsManager.shared.bodyConditions
+        self.bodyConditionsCollectionView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
@@ -120,6 +107,8 @@ private extension BodyConditionsVC {
         lblWeight.text = String(bodyCondition.weight.orZero)
         lblHeight.text = String(bodyCondition.height.orZero)
         lblChest.text = String(bodyCondition.chest.orZero)
+        lblBiceps.text =
+            String(bodyCondition.biceps.orZero)
         lblDate.text = DateFormatterHelper.convertToString(from: bodyCondition.date.orCurrent)
     }
 }
