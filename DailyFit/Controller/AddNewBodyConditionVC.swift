@@ -6,7 +6,6 @@
 //  Copyright © 2019 Taras Vitoshko. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class AddNewBodyConditionVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -14,7 +13,8 @@ class AddNewBodyConditionVC: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var txtHeight: UITextField!
     @IBOutlet weak var txtChest: UITextField!
     @IBOutlet weak var txtBiceps: UITextField!
-
+    var myImage : UIImage?
+    
     @IBAction func btnAddPicture(_ sender: Any) {
         
         let imagePickerController = UIImagePickerController()
@@ -36,7 +36,7 @@ class AddNewBodyConditionVC: UIViewController, UIImagePickerControllerDelegate, 
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-        
+        myImage = image
         picker.dismiss(animated: true, completion: nil)
         
     }
@@ -45,14 +45,15 @@ class AddNewBodyConditionVC: UIViewController, UIImagePickerControllerDelegate, 
         picker.dismiss(animated: true, completion: nil)
     }
     @IBAction func btnSave(_ sender: Any) {
-    let weight = txtWeight.text
-    let height = txtHeight.text
-    let chest = txtChest.text
-    let biceps = txtBiceps.text
         
-    var bodyConditions = [BodyCondition]()
+        let weight: Double = Double(txtWeight.text.orEmpty).orZero
+        let height: Double = Double(txtHeight.text.orEmpty).orZero
+        let chest: Double = Double(txtChest.text.orEmpty).orZero
+        let biceps: Double = Double(txtBiceps.text.orEmpty).orZero
+    
+    BodyConditionsManager.shared.bodyConditions.append(BodyCondition(date: Date(), weight: weight, height: height, chest: chest, biceps: biceps, image: myImage))
         
-    bodyConditions = [BodyCondition(date: Date(), weight: weight, height: height, chest: chest, biceps: biceps, image: UIImage(named: "BodyCondition"))]
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

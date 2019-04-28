@@ -519,6 +519,7 @@
                                 <rect key="frame" x="0.0" y="95" width="375" height="717"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableViewCell" rowHeight="320" id="W35-5H-XKX" customClass="TableViewCell" customModule="DailyFit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="320"/>
@@ -607,14 +608,14 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41u-gs-9S0">
-                                                <rect key="frame" x="0.0" y="141.66666666666666" width="44" height="22"/>
+                                                <rect key="frame" x="0.0" y="117.33333333333334" width="44" height="44"/>
                                                 <state key="normal" image="Home"/>
                                                 <connections>
                                                     <action selector="homeButton:" destination="MFy-oP-ieY" eventType="touchUpInside" id="RsM-rZ-QEu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCM-No-N0F">
-                                                <rect key="frame" x="0.0" y="261.33333333333331" width="44" height="22"/>
+                                                <rect key="frame" x="0.0" y="234.33333333333331" width="44" height="47"/>
                                                 <color key="tintColor" red="0.25490196079999999" green="0.80784313730000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" image="Training templates"/>
                                                 <connections>
@@ -622,22 +623,22 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cac-34-jCr">
-                                                <rect key="frame" x="0.0" y="381" width="44" height="22"/>
+                                                <rect key="frame" x="0.0" y="354.66666666666669" width="44" height="47"/>
                                                 <state key="normal" image="Exercises"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKX-Rg-qNY">
-                                                <rect key="frame" x="0.0" y="500.66666666666663" width="44" height="22"/>
+                                                <rect key="frame" x="0.0" y="474.66666666666669" width="44" height="47.000000000000057"/>
                                                 <state key="normal" image="Achievements"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rki-yv-iEt">
-                                                <rect key="frame" x="0.0" y="620.33333333333337" width="44" height="22"/>
+                                                <rect key="frame" x="0.0" y="595" width="44" height="47"/>
                                                 <state key="normal" image="Body Conditions"/>
                                                 <connections>
                                                     <segue destination="B4e-t9-mHG" kind="show" id="7Ny-0h-3Wd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHF-SE-eNO">
-                                                <rect key="frame" x="0.0" y="740" width="44" height="22"/>
+                                                <rect key="frame" x="0.0" y="715" width="44" height="47"/>
                                                 <state key="normal" image="Settings"/>
                                                 <connections>
                                                     <segue destination="ysy-E2-ETP" kind="show" id="bGk-Um-zGn"/>
@@ -662,7 +663,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
