@@ -17,6 +17,7 @@ class DashBoardVC: UIViewController {
     @IBOutlet weak var breakButton: UIButton!
     @IBOutlet weak var alertButton: UIButton!
     @IBOutlet weak var hotButton: UIButton!
+    @IBOutlet weak var bestScoreView: BestScoreView!
     
     @IBAction func homeButton(_ sender: Any) {
         hideMenu()
@@ -30,16 +31,18 @@ class DashBoardVC: UIViewController {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        bestScoreView.play()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         menuCurveImageView.image = #imageLiteral(resourceName: "MenuCurve")
-        tableView.dataSource = self
+//        tableView.dataSource = self
         
-        Data.getData { (data) in
-            self.tableData = data
-            self.tableView.reloadData()
-        }
+//        Data.getData { (data) in
+//            self.tableData = data
+//            self.tableView.reloadData()
+//        }
         
         hideMenu()
     }
@@ -119,15 +122,15 @@ class DashBoardVC: UIViewController {
     }
 }
 
-extension DashBoardVC: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableData.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell") as! TableViewCell
-        cell.setup(model: tableData[indexPath.row])
-        return cell
-    }
-}
+//extension DashBoardVC: UITableViewDataSource {
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return tableData.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell") as! TableViewCell
+//        cell.setup(model: tableData[indexPath.row])
+//        return cell
+//    }
+//}

@@ -90,7 +90,7 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
         center.removePendingNotificationRequests(withIdentifiers: identifiers)
     }
     
-    //------
+    //--------------------
 }
 
 private extension BodyConditionsVC {
@@ -101,14 +101,13 @@ private extension BodyConditionsVC {
     }
     
     func configureUI(for index: Int) {
-        guard index < self.bodyConditions.count - 1 else { return }
+        guard index < self.bodyConditions.count else { return }
         
         let bodyCondition = self.bodyConditions[index]
         lblWeight.text = String(bodyCondition.weight.orZero)
         lblHeight.text = String(bodyCondition.height.orZero)
         lblChest.text = String(bodyCondition.chest.orZero)
-        lblBiceps.text =
-            String(bodyCondition.biceps.orZero)
+        lblBiceps.text = String(bodyCondition.biceps.orZero)
         lblDate.text = DateFormatterHelper.convertToString(from: bodyCondition.date.orCurrent)
     }
 }

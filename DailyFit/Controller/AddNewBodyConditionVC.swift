@@ -18,6 +18,8 @@ class AddNewBodyConditionVC: UIViewController, UIImagePickerControllerDelegate, 
     @IBAction func btnAddPicture(_ sender: Any) {
         
         let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        
         let actionSheet = UIAlertController(title: "Photo Source", message: "Choose photo source", preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action: UIAlertAction) in
             imagePickerController.sourceType = .camera
@@ -53,10 +55,12 @@ class AddNewBodyConditionVC: UIViewController, UIImagePickerControllerDelegate, 
     
     BodyConditionsManager.shared.bodyConditions.append(BodyCondition(date: Date(), weight: weight, height: height, chest: chest, biceps: biceps, image: myImage))
         
-        
+        navigationController?.popViewController(animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
 
 }

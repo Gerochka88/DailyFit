@@ -13,10 +13,13 @@ class ActivityMonitorViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        runningLevelView.completionCallback = {
-            self.play(withDelay: 0.5)
-        }
-        play(withDelay: 1)
+//        runningLevelView.completionCallback = {
+//            self.play(withDelay: 0.5)
+//        }
+//        play(withDelay: 1)
+        
+        totalStepsView.play()
+        dailySummaryView.play()
     }
     
     private func play(withDelay: TimeInterval) {
