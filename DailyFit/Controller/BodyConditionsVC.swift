@@ -70,7 +70,7 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
         let date = Date(timeIntervalSinceNow: seconds)
         print(date)
         let content = UNMutableNotificationContent()
-        content.title = "Hey you are fat"
+        content.title = "Hey hey"
         content.body = "BUT STILL YOU ARE AMAZING PROGRAMMER!!!"
         content.sound = UNNotificationSound.default
         

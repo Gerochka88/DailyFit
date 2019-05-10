@@ -64,9 +64,7 @@ class ViewController: UIViewController {
         backgroundImageView.image = UIImage(named: "loginbackground")
         view.sendSubviewToBack(backgroundImageView)
     }
-  // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-  //  let destinationVC: MainMenuVC = segue.destination as! MainMenuVC
-  //      destinationVC.labelText = tfUsername.text! }
+
 }
 // MARK: - Hide Keyboard
 extension UIViewController {

@@ -97,7 +97,7 @@ open class TotalOfStepsView: MacawView {
         }
         
         self.node = [text, barsGroup, barsBackgroundGroup, captionsGroup].group()
-        self.backgroundColor = UIColor(cgColor: Color(val: 0x5B2FA1).toCG())
+        self.backgroundColor = UIColor(cgColor: Color(val: 0x000000).toCG())
     }
     
     private func createAnimations() {

@@ -12,15 +12,16 @@ import HealthKitUI
 
 let healthKitStore:HKHealthStore = HKHealthStore()
 
-class SettingsVC: UIViewController {
+class SettingsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-
+   
+    @IBOutlet weak var profileImage: UIImageView!
+    
     @IBOutlet weak var lblGender: UILabel!
     
     @IBOutlet weak var lblAge: UILabel!
     
     @IBOutlet weak var lblBloodType: UILabel!
-    
 
     @IBAction func btnGetHKData(_ sender: Any) {
         let (age, blood, biologicalSex) = self.readProfile()
@@ -32,9 +33,34 @@ class SettingsVC: UIViewController {
         
     }
     
-
+    @IBAction func addImgBtn(_ sender: Any) {
+        let picturePickerController = UIImagePickerController()
+        picturePickerController.delegate = self
+        
+        let actionSheet = UIAlertController(title: "Photo Source", message: "Choose photo source", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action: UIAlertAction) in
+            picturePickerController.sourceType = .camera
+            self.present(picturePickerController, animated: true, completion: nil)
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Photo library", style: .default, handler: { (action: UIAlertAction) in
+            picturePickerController.sourceType = .photoLibrary
+            self.present(picturePickerController, animated: true, completion: nil)
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+    private func picturePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        profileImage.image = image.self
+        picker.dismiss(animated: true, completion: nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        profileImage.roundCorner(radius: 70)
         autorizeHealthKit()
         view.setGradientBackgroundColor(colorOne: Colors.darkGrey , colorTwo:Colors.lightGrey, colorThree: Colors.veryDarkGrey, colorFour: Colors.black)
     }

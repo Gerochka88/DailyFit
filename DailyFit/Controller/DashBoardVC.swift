@@ -19,8 +19,11 @@ class DashBoardVC: UIViewController {
     @IBOutlet weak var hotButton: UIButton!
     @IBOutlet weak var bestScoreView: BestScoreView!
     
+    @IBAction func stepsViewbtn(_ sender: Any) {
+    }
     @IBAction func homeButton(_ sender: Any) {
         hideMenu()
+        bestScoreView.play()
     }
     @IBOutlet weak var menuCurveImageView: UIImageView!
     
@@ -58,6 +61,7 @@ class DashBoardVC: UIViewController {
     
     @IBAction func screenCoverTapped(_ sender: UIButton) {
         hideMenu()
+        bestScoreView.play()
     }
     
     func showMenu() {
