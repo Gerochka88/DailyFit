@@ -483,18 +483,7 @@
                                     <action selector="btnGetHKData:" destination="ysy-E2-ETP" eventType="touchUpInside" id="by5-At-0VF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFg-d2-M1q" customClass="SAButton" customModule="DailyFit" customModuleProvider="target">
-                                <rect key="frame" x="36" y="568" width="303" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="WNh-Fd-sE0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Choose profile image"/>
-                                <connections>
-                                    <action selector="addImgBtn:" destination="ysy-E2-ETP" eventType="touchUpInside" id="GML-1O-LC6"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Taras Vitoshko small" translatesAutoresizingMaskIntoConstraints="NO" id="3pl-YM-QkI">
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Taras Vitoshko small" translatesAutoresizingMaskIntoConstraints="NO" id="3pl-YM-QkI">
                                 <rect key="frame" x="95" y="113" width="184" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -504,15 +493,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="aJI-hW-70G" secondAttribute="trailing" constant="20" id="16L-fG-BCt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HdF-FD-TFo" secondAttribute="trailing" constant="20" id="1bP-WB-U28"/>
                             <constraint firstAttribute="trailing" secondItem="87U-9p-cqg" secondAttribute="trailing" constant="14" id="1og-dw-nNT"/>
-                            <constraint firstItem="aFg-d2-M1q" firstAttribute="leading" secondItem="bJB-Iy-Yal" secondAttribute="leadingMargin" constant="20" id="5u1-VE-Udh"/>
                             <constraint firstItem="aJI-hW-70G" firstAttribute="top" secondItem="HdF-FD-TFo" secondAttribute="bottom" constant="20" id="Htu-Q1-vEg"/>
                             <constraint firstItem="HdF-FD-TFo" firstAttribute="leading" secondItem="bJB-Iy-Yal" secondAttribute="leadingMargin" constant="20" id="Kmu-bb-mXB"/>
                             <constraint firstItem="87U-9p-cqg" firstAttribute="top" secondItem="ZsR-je-kQR" secondAttribute="bottom" constant="220" id="Obv-Jf-3Gk"/>
                             <constraint firstItem="aJI-hW-70G" firstAttribute="leading" secondItem="bJB-Iy-Yal" secondAttribute="leadingMargin" constant="20" id="URp-iN-oDL"/>
-                            <constraint firstItem="HdF-FD-TFo" firstAttribute="top" secondItem="aFg-d2-M1q" secondAttribute="bottom" constant="20" id="dxd-Wq-3T6"/>
                             <constraint firstItem="87U-9p-cqg" firstAttribute="leading" secondItem="bJB-Iy-Yal" secondAttribute="leading" id="nOq-aA-Suq"/>
                             <constraint firstItem="wfK-Ut-6uL" firstAttribute="top" secondItem="aJI-hW-70G" secondAttribute="bottom" constant="20" id="zGC-8P-huI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aFg-d2-M1q" secondAttribute="trailing" constant="20" id="zk2-la-L3H"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="XJP-TF-JZt"/>
@@ -520,7 +506,7 @@
                         <outlet property="lblAge" destination="HBr-VB-UPd" id="Jp7-Uu-NOC"/>
                         <outlet property="lblBloodType" destination="Xkd-gv-uLp" id="a9S-GQ-ekn"/>
                         <outlet property="lblGender" destination="A81-fC-yfK" id="Emm-5a-RSN"/>
-                        <outlet property="profileImage" destination="3pl-YM-QkI" id="l82-1J-yUE"/>
+                        <outlet property="profileImg" destination="3pl-YM-QkI" id="mwy-Wm-vzp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4N-tu-cK1" userLabel="First Responder" sceneMemberID="firstResponder"/>

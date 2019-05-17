@@ -21,4 +21,7 @@ struct Alert {
     static func showIncompletePasswordAllert(on vc:UIViewController){
         showBasicAlert(on: vc, with: "Password", message: "Please fill the password field")
     }
+    static func showAllertChecker(on vc: UIViewController) {
+        showBasicAlert(on: vc, with: "Works!", message: "This shit works.")
+    }
 }

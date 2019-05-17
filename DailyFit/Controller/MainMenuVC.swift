@@ -12,10 +12,12 @@ import HealthKitUI
 
 let healthKitStore:HKHealthStore = HKHealthStore()
 
+
 class SettingsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
    
-    @IBOutlet weak var profileImage: UIImageView!
+
+    @IBOutlet weak var profileImg: UIImageView!
     
     @IBOutlet weak var lblGender: UILabel!
     
@@ -32,8 +34,34 @@ class SettingsVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         //let calendar = Calendar.current
         
     }
+   
+    //MARK:- Image Picker Controller
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let profileImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        
+        profileImg.image = profileImage
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
     
-    @IBAction func addImgBtn(_ sender: Any) {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //MARK:- Tap Recognizer
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ImageTapped))
+        self.profileImg.addGestureRecognizer(tapGesture)
+        
+        //MARK:- Corner profile image
+        profileImg.layer.cornerRadius = profileImg.frame.height/2
+        //MARK:- HK authorization
+        autorizeHealthKit()
+        //MARK:- background color
+        view.setGradientBackgroundColor(colorOne: Colors.darkGrey , colorTwo:Colors.lightGrey, colorThree: Colors.veryDarkGrey, colorFour: Colors.black)
+    }
+    //MARK: - Image tapped
+    @objc func ImageTapped() {
         let picturePickerController = UIImagePickerController()
         picturePickerController.delegate = self
         
@@ -51,18 +79,6 @@ class SettingsVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         self.present(actionSheet, animated: true, completion: nil)
-    }
-    private func picturePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-        profileImage.image = image.self
-        picker.dismiss(animated: true, completion: nil)
-        
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        profileImage.roundCorner(radius: 70)
-        autorizeHealthKit()
-        view.setGradientBackgroundColor(colorOne: Colors.darkGrey , colorTwo:Colors.lightGrey, colorThree: Colors.veryDarkGrey, colorFour: Colors.black)
     }
     //MARK: - Reading data from Health kit (Age, BT)
     func readProfile() -> (age:Int?, bloodtype :HKBloodTypeObject?, biologicalSex: HKBiologicalSexObject?){
