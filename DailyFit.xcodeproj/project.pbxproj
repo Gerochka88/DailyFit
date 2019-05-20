@@ -59,6 +59,7 @@
 		73258068223E90B400F05A90 /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73258067223E90B400F05A90 /* MainMenuVC.swift */; };
 		7325806A223F91AB00F05A90 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73258069223F91AB00F05A90 /* Alert.swift */; };
 		732612662285F3BF00824985 /* TotalOfStepsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732612652285F3BF00824985 /* TotalOfStepsVC.swift */; };
+		7335DB9322930887007C6B71 /* BestScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7335DB9222930887007C6B71 /* BestScoreVC.swift */; };
 		735667EA22667FC100BC0A2A /* AddNewBodyConditionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735667E922667FC100BC0A2A /* AddNewBodyConditionVC.swift */; };
 		739DC93F225FE33A0048221C /* CubicCurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DC93E225FE33A0048221C /* CubicCurveAlgorithm.swift */; };
 		739DC946225FE3D40048221C /* TotalOfStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DC942225FE3D40048221C /* TotalOfStepsView.swift */; };
@@ -140,6 +141,7 @@
 		73258067223E90B400F05A90 /* MainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
 		73258069223F91AB00F05A90 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		732612652285F3BF00824985 /* TotalOfStepsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalOfStepsVC.swift; sourceTree = "<group>"; };
+		7335DB9222930887007C6B71 /* BestScoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestScoreVC.swift; sourceTree = "<group>"; };
 		735667E922667FC100BC0A2A /* AddNewBodyConditionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBodyConditionVC.swift; sourceTree = "<group>"; };
 		739DC93E225FE33A0048221C /* CubicCurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicCurveAlgorithm.swift; sourceTree = "<group>"; };
 		739DC942225FE3D40048221C /* TotalOfStepsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalOfStepsView.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 				730063EF225CA8C600F8C755 /* BodyConditionsVC.swift */,
 				735667E922667FC100BC0A2A /* AddNewBodyConditionVC.swift */,
 				732612652285F3BF00824985 /* TotalOfStepsVC.swift */,
+				7335DB9222930887007C6B71 /* BestScoreVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				25969C0D22662CD000A116FA /* NibLoadable.swift in Sources */,
 				73D4AC222254EBCF005259DF /* Data.swift in Sources */,
 				257DFC0F22662998008B762F /* CLLocationCoordinate2D.swift in Sources */,
+				7335DB9322930887007C6B71 /* BestScoreVC.swift in Sources */,
 				257DFC0B22662997008B762F /* FunctionApplication.swift in Sources */,
 				257DFC1322662998008B762F /* UITableView.swift in Sources */,
 				739DC947225FE3D40048221C /* BestScoreView.swift in Sources */,

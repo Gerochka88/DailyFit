@@ -25,15 +25,6 @@ class SettingsVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     
     @IBOutlet weak var lblBloodType: UILabel!
 
-    @IBAction func btnGetHKData(_ sender: Any) {
-        let (age, blood, biologicalSex) = self.readProfile()
-        
-        self.lblAge.text = "\(String(describing: age!))"
-        self.lblBloodType.text = self.getReadableBT(bloodType: blood?.bloodType)
-        self.lblGender.text = self.getReadableGender(biologicalSex: biologicalSex?.biologicalSex)
-        //let calendar = Calendar.current
-        
-    }
    
     //MARK:- Image Picker Controller
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -49,6 +40,17 @@ class SettingsVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK:- HK authorization
+        autorizeHealthKit()
+        
+        //MARK:- Getting Data
+        let (age, blood, biologicalSex) = self.readProfile()
+        
+        self.lblAge.text = "\(String(describing: age!))"
+        self.lblBloodType.text = self.getReadableBT(bloodType: blood?.bloodType)
+        self.lblGender.text = self.getReadableGender(biologicalSex: biologicalSex?.biologicalSex)
+        
         //MARK:- Tap Recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ImageTapped))
         self.profileImg.addGestureRecognizer(tapGesture)
@@ -57,8 +59,7 @@ class SettingsVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         profileImg.toCirle()
         profileImg.layer.borderColor = UIColor.white.cgColor
         profileImg.layer.borderWidth = 2
-        //MARK:- HK authorization
-        autorizeHealthKit()
+       
         //MARK:- background color
         view.setGradientBackgroundColor(colorOne: Colors.darkGrey , colorTwo:Colors.lightGrey, colorThree: Colors.veryDarkGrey, colorFour: Colors.black)
     }

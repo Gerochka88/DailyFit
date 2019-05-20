@@ -20,7 +20,7 @@ open class BestScoreView: MacawView {
     private let milesCaptionWidth = 40
     private let backgroundLineSpacing = 20
     private let captionsX = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
-    private let captionsY = ["5 mi", "4 mi", "3 mi", "2 mi", "1 mi"]
+    private let captionsY = ["180", "140", "100", "80", "50"]
 
     private func createScene() {
         scoreLines.append(
@@ -172,8 +172,8 @@ open class BestScoreView: MacawView {
         
         let text = Text(
             text: "Best Score",
-            font: Font(name: "Serif", size: 24),
-            fill: Color(val: 0xFFFFFF)
+            font: Font(name: "System Ultra Light", size: 24),
+            fill: Color(val: 0x74F9FD)
         )
         text.align = .mid
         text.place = .move(dx: viewCenterX, dy: 30)

@@ -14,7 +14,6 @@ open class TotalOfStepsView: MacawView {
     private let segmentWidth = 40
     private let segmentHeight = 10
     private let segmentsSpacing = 10
-    
     private let emptyBarSegmentColor = Color.rgba(r: 255, g: 255, b: 255, a: 0.1)
     private let barSegmentColors = [
         0x359DDC,
@@ -68,8 +67,8 @@ open class TotalOfStepsView: MacawView {
         
         let text = Text(
             text: "Total of Steps",
-            font: Font(name: "Serif", size: 24),
-            fill: Color(val: 0xFFFFFF)
+            font: Font(name: "System Ultra Light", size: 24),
+            fill: Color(val: 0x74F9FD)
         )
         text.align = .mid
         text.place = .move(dx: viewCenterX, dy: 30)
@@ -97,7 +96,7 @@ open class TotalOfStepsView: MacawView {
         }
         
         self.node = [text, barsGroup, barsBackgroundGroup, captionsGroup].group()
-        self.backgroundColor = UIColor(cgColor: Color(val: 0x000000).toCG())
+        self.backgroundColor = UIColor(cgColor: Color(val: 0x2A2E3A).toCG())
     }
     
     private func createAnimations() {

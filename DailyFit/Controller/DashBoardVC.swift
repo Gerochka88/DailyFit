@@ -17,7 +17,8 @@ class DashBoardVC: UIViewController {
     @IBOutlet weak var breakButton: UIButton!
     @IBOutlet weak var alertButton: UIButton!
     @IBOutlet weak var hotButton: UIButton!
-    @IBOutlet weak var bestScoreView: BestScoreView!
+ 
+    @IBOutlet weak var bestScoreView: DailySummaryView!
     
     @IBAction func stepsViewbtn(_ sender: Any) {
     }

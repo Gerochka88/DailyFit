@@ -54,9 +54,9 @@ open class DailySummaryView: MacawView {
         let viewCenterX = Double(self.frame.width / 2)
         
         let text = Text(
-            text: "Daily Summary",
+            text: "Dashboard",
             font: Font(name: "Serif", size: 24),
-            fill: Color(val: 0xFFFFFF)
+            fill: Color(val: 0x74F9FD)
         )
         text.align = .mid
         text.place = .move(dx: viewCenterX, dy: 30)
@@ -75,7 +75,7 @@ open class DailySummaryView: MacawView {
         rootNode.contents.append(animationGroup)
         
         self.node = [text, rootNode].group()
-       self.backgroundColor = UIColor(cgColor: Color(val: 0x4a2e7d).toCG())
+       self.backgroundColor = UIColor(cgColor: Color(val: 0x2A2E3A).toCG())
     }
     
     private func createAnimations() {
