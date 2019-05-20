@@ -201,6 +201,7 @@
 		257DFBE622662997008B762F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				73258062223E5A9D00F05A90 /* CustomViews */,
 				25969C0522662CD000A116FA /* Reusable */,
 				257DFBE722662997008B762F /* CALayer.swift */,
 				257DFBE822662997008B762F /* TernarWrapper.swift */,
@@ -276,10 +277,9 @@
 		73258048223E56EB00F05A90 /* DailyFit */ = {
 			isa = PBXGroup;
 			children = (
-				250521752266315F00FBA5E0 /* Manager */,
 				257DFBE622662997008B762F /* Extensions */,
+				250521752266315F00FBA5E0 /* Manager */,
 				730063EE225C8CD900F8C755 /* DailyFit.entitlements */,
-				73258062223E5A9D00F05A90 /* CustomViews */,
 				73D4AC082254EAE9005259DF /* Model */,
 				73D4AC072254EABC005259DF /* Controller */,
 				73D4AC092254EAF8005259DF /* View */,
@@ -309,7 +309,8 @@
 				73258065223E5B8C00F05A90 /* SATextField.swift */,
 				73AF5D002242583B00B201D1 /* GradientBackGroundColor.swift */,
 			);
-			path = CustomViews;
+			name = CustomViews;
+			path = ../CustomViews;
 			sourceTree = "<group>";
 		};
 		735667E82266611200BC0A2A /* Graphics */ = {

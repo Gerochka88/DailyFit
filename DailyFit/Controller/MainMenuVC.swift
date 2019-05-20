@@ -54,7 +54,9 @@ class SettingsVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         self.profileImg.addGestureRecognizer(tapGesture)
         
         //MARK:- Corner profile image
-        profileImg.layer.cornerRadius = profileImg.frame.height/2
+        profileImg.toCirle()
+        profileImg.layer.borderColor = UIColor.white.cgColor
+        profileImg.layer.borderWidth = 2
         //MARK:- HK authorization
         autorizeHealthKit()
         //MARK:- background color

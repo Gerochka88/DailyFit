@@ -13,10 +13,11 @@ class AddNewBodyConditionVC: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var txtHeight: UITextField!
     @IBOutlet weak var txtChest: UITextField!
     @IBOutlet weak var txtBiceps: UITextField!
+    @IBOutlet weak var imgBodyCondition: UIImageView!
+    
     var myImage : UIImage?
     
-    @IBAction func btnAddPicture(_ sender: Any) {
-        
+    @objc func Tapped() {
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         
@@ -36,9 +37,11 @@ class AddNewBodyConditionVC: UIViewController, UIImagePickerControllerDelegate, 
         self.present(actionSheet, animated: true, completion: nil)
         
     }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         myImage = image
+        imgBodyCondition.image = image
         picker.dismiss(animated: true, completion: nil)
         
     }
@@ -48,6 +51,12 @@ class AddNewBodyConditionVC: UIViewController, UIImagePickerControllerDelegate, 
     }
     @IBAction func btnSave(_ sender: Any) {
         
+        if(txtHeight.text == "" || txtHeight.text == "" || txtWeight.text == "" || txtBiceps.text == "")
+        {
+         Alert.showIncompleteField(on: self)
+        }
+        else {
+            
         let weight: Double = Double(txtWeight.text.orEmpty).orZero
         let height: Double = Double(txtHeight.text.orEmpty).orZero
         let chest: Double = Double(txtChest.text.orEmpty).orZero
@@ -56,11 +65,13 @@ class AddNewBodyConditionVC: UIViewController, UIImagePickerControllerDelegate, 
     BodyConditionsManager.shared.bodyConditions.append(BodyCondition(date: Date(), weight: weight, height: height, chest: chest, biceps: biceps, image: myImage))
         
         navigationController?.popViewController(animated: true)
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        let TapGesture = UITapGestureRecognizer(target: self, action: #selector(Tapped))
+        self.imgBodyCondition.addGestureRecognizer(TapGesture)
+
     }
 
 }

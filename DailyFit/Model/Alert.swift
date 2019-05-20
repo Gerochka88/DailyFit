@@ -24,4 +24,8 @@ struct Alert {
     static func showAllertChecker(on vc: UIViewController) {
         showBasicAlert(on: vc, with: "Works!", message: "This shit works.")
     }
+    static func showIncompleteField(on vc: UIViewController){
+        showBasicAlert(on: vc, with: "Error", message: "Please fill all the fields.")
+    }
+    
 }
