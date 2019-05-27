@@ -48,6 +48,7 @@
 		2B9EE6EB3000951C55AEFEE0 /* Pods_DailyFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAEFD7B8D3D2B2EA55A0E5F /* Pods_DailyFit.framework */; };
 		730063ED225C8CD900F8C755 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730063EC225C8CD900F8C755 /* HealthKit.framework */; };
 		730063F0225CA8C600F8C755 /* BodyConditionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730063EF225CA8C600F8C755 /* BodyConditionsVC.swift */; };
+		731D08DF229BD6B700D81EB4 /* ExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731D08DE229BD6B700D81EB4 /* ExercisesVC.swift */; };
 		7325804A223E56EB00F05A90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73258049223E56EB00F05A90 /* AppDelegate.swift */; };
 		7325804C223E56EB00F05A90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325804B223E56EB00F05A90 /* ViewController.swift */; };
 		7325804F223E56EB00F05A90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7325804D223E56EB00F05A90 /* Main.storyboard */; };
@@ -80,7 +81,7 @@
 		73D4AC1E2254EB83005259DF /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC132254EB83005259DF /* UIVisualEffectViewX.swift */; };
 		73D4AC1F2254EB83005259DF /* UIImageViewWithMaskAndShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC142254EB83005259DF /* UIImageViewWithMaskAndShadow.swift */; };
 		73D4AC222254EBCF005259DF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC202254EBCF005259DF /* Data.swift */; };
-		73D4AC232254EBCF005259DF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC212254EBCF005259DF /* Model.swift */; };
+		73D4AC232254EBCF005259DF /* ExercisesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC212254EBCF005259DF /* ExercisesModel.swift */; };
 		73D4AC252254ECB9005259DF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC242254ECB9005259DF /* TableViewCell.swift */; };
 		73D4AC272254ECF3005259DF /* DashBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC262254ECF3005259DF /* DashBoardVC.swift */; };
 /* End PBXBuildFile section */
@@ -128,6 +129,7 @@
 		730063EC225C8CD900F8C755 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		730063EE225C8CD900F8C755 /* DailyFit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyFit.entitlements; sourceTree = "<group>"; };
 		730063EF225CA8C600F8C755 /* BodyConditionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyConditionsVC.swift; sourceTree = "<group>"; };
+		731D08DE229BD6B700D81EB4 /* ExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesVC.swift; sourceTree = "<group>"; };
 		73258046223E56EB00F05A90 /* DailyFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73258049223E56EB00F05A90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7325804B223E56EB00F05A90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,7 +164,7 @@
 		73D4AC132254EB83005259DF /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
 		73D4AC142254EB83005259DF /* UIImageViewWithMaskAndShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewWithMaskAndShadow.swift; sourceTree = "<group>"; };
 		73D4AC202254EBCF005259DF /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		73D4AC212254EBCF005259DF /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		73D4AC212254EBCF005259DF /* ExercisesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesModel.swift; sourceTree = "<group>"; };
 		73D4AC242254ECB9005259DF /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		73D4AC262254ECF3005259DF /* DashBoardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardVC.swift; sourceTree = "<group>"; };
 		ACAEFD7B8D3D2B2EA55A0E5F /* Pods_DailyFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -337,6 +339,7 @@
 				735667E922667FC100BC0A2A /* AddNewBodyConditionVC.swift */,
 				732612652285F3BF00824985 /* TotalOfStepsVC.swift */,
 				7335DB9222930887007C6B71 /* BestScoreVC.swift */,
+				731D08DE229BD6B700D81EB4 /* ExercisesVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -346,7 +349,7 @@
 			children = (
 				739DC93E225FE33A0048221C /* CubicCurveAlgorithm.swift */,
 				73D4AC202254EBCF005259DF /* Data.swift */,
-				73D4AC212254EBCF005259DF /* Model.swift */,
+				73D4AC212254EBCF005259DF /* ExercisesModel.swift */,
 				73258069223F91AB00F05A90 /* Alert.swift */,
 				257DFBDF22662886008B762F /* BodyCondition.swift */,
 			);
@@ -509,6 +512,7 @@
 			files = (
 				7325804C223E56EB00F05A90 /* ViewController.swift in Sources */,
 				73D4AC152254EB83005259DF /* UIImageViewX.swift in Sources */,
+				731D08DF229BD6B700D81EB4 /* ExercisesVC.swift in Sources */,
 				257DFC0C22662998008B762F /* Functions.swift in Sources */,
 				257DFBE022662886008B762F /* BodyCondition.swift in Sources */,
 				735667EA22667FC100BC0A2A /* AddNewBodyConditionVC.swift in Sources */,
@@ -570,7 +574,7 @@
 				257DFC1C22662998008B762F /* NSLock.swift in Sources */,
 				25969C0C22662CD000A116FA /* ReusableCollectionView.swift in Sources */,
 				257DFC1422662998008B762F /* UITextField.swift in Sources */,
-				73D4AC232254EBCF005259DF /* Model.swift in Sources */,
+				73D4AC232254EBCF005259DF /* ExercisesModel.swift in Sources */,
 				73D4AC1C2254EB83005259DF /* UILabelX.swift in Sources */,
 				257DFC1622662998008B762F /* String.swift in Sources */,
 				73AF5D0322425A5500B201D1 /* Constants.swift in Sources */,

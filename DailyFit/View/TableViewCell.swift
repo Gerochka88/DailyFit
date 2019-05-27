@@ -12,14 +12,14 @@ class TableViewCell: UITableViewCell {
 
 //    @IBOutlet weak var titleLabel: UILabel!
 //    @IBOutlet weak var subtitleLabel: UILabel!
-    @IBOutlet weak var cellImageView: UIImageView!
+//    @IBOutlet weak var cellImageView: UIImageView!
 //    @IBOutlet weak var data1Label: UILabel!
 //    @IBOutlet weak var data2Label: UILabel!
 
-    func setup(model: Model) {
+    func setup(model: ExercisesModel) {
 //        titleLabel.text = model.title
 //        subtitleLabel.text = model.subTitle
-        cellImageView.image = #imageLiteral(resourceName: "CellTemplate")
+//        cellImageView.image = #imageLiteral(resourceName: "CellTemplate")
 //        data1Label.text = model.data1
     }
 }

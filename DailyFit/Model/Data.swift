@@ -13,14 +13,16 @@ import UIKit
 
 class Data {
     
-    static func getData(completion: @escaping ([Model]) -> ()) {
+    static func getData(completion: @escaping ([ExercisesModel]) -> ()) {
         DispatchQueue.global(qos: .userInteractive).async {
-            var data = [Model]()
-            data.append(Model(title: "One", subTitle: "Subtitle", image: nil, data1: "Data1", data2: "Data2"))
-            data.append(Model(title: "Two", subTitle: "Subtitle", image: nil, data1: "Data1", data2: "Data2"))
-            data.append(Model(title: "Three", subTitle: "Subtitle", image: nil, data1: "Data1", data2: "Data2"))
-            data.append(Model(title: "Four", subTitle: "Subtitle", image: nil, data1: "Data1", data2: "Data2"))
-            
+            var data = [ExercisesModel]()
+            data.append(ExercisesModel(title: "Legs", subTitle: "Leg press", image: UIImage(named: "legpress"), data1: "Data1", data2: "Data2"))
+            data.append(ExercisesModel(title: "Legs", subTitle: "Squats", image: UIImage(named: "squats"), data1: "Data1", data2: "Data2"))
+            data.append(ExercisesModel(title: "Legs", subTitle: "Burpees", image: UIImage(named: "burpees"), data1: "Data1", data2: "Data2"))
+            data.append(ExercisesModel(title: "Legs", subTitle: "Deadlift", image: UIImage(named: "deadlift"), data1: "Data1", data2: "Data2"))
+            data.append(ExercisesModel(title: "Legs", subTitle: "Deadlift", image: UIImage(named: "deadlift"), data1: "Data1", data2: "Data2"))
+            data.append(ExercisesModel(title: "Legs", subTitle: "Deadlift", image: UIImage(named: "deadlift"), data1: "Data1", data2: "Data2"))
+            data.append(ExercisesModel(title: "Legs", subTitle: "Deadlift", image: UIImage(named: "deadlift"), data1: "Data1", data2: "Data2"))
             DispatchQueue.main.async {
                 completion(data)
             }

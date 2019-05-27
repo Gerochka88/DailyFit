@@ -12,7 +12,8 @@
 
 import UIKit
 
-class Model {
+class ExercisesModel {
+    
     var title = ""
     var subTitle = ""
     var image: UIImage?

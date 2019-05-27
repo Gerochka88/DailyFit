@@ -28,7 +28,7 @@ class DashBoardVC: UIViewController {
     }
     @IBOutlet weak var menuCurveImageView: UIImageView!
     
-    var tableData: [Model] = []
+    var tableData: [ExercisesModel] = []
     
     
     override func viewWillAppear(_ animated: Bool) {
