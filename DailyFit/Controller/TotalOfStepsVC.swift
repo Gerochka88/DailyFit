@@ -10,12 +10,10 @@ import UIKit
 
 class TotalOfStepsVC: UIViewController {
     
-
-    
     @IBOutlet weak var totalOfStepsView: TotalOfStepsView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         totalOfStepsView.play()
-}
-
+    }
 }

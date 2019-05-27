@@ -11,6 +11,7 @@ import UIKit
 class BestScoreVC: UIViewController {
 
     @IBOutlet weak var bestScoreView: BestScoreView!
+    
         override func viewDidLoad() {
         super.viewDidLoad()
         bestScoreView.play()

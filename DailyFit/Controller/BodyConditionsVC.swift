@@ -16,6 +16,7 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
     @IBOutlet weak var lblWeight: UILabel!
     @IBOutlet weak var lblHeight: UILabel!
     @IBOutlet weak var lblChest: UILabel!
+
     @IBOutlet weak var lblDate: UILabel!
     @IBOutlet weak var lblBiceps: UILabel!
     @IBOutlet weak var bodyConditionsCollectionView: UICollectionView!
