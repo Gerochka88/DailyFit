@@ -63,6 +63,7 @@
 		7325806A223F91AB00F05A90 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73258069223F91AB00F05A90 /* Alert.swift */; };
 		732612662285F3BF00824985 /* TotalOfStepsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732612652285F3BF00824985 /* TotalOfStepsVC.swift */; };
 		7335DB9322930887007C6B71 /* BestScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7335DB9222930887007C6B71 /* BestScoreVC.swift */; };
+		73523AFF229C83E70009BBBF /* AddNewExerciseVС.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73523AFE229C83E70009BBBF /* AddNewExerciseVС.swift */; };
 		735667EA22667FC100BC0A2A /* AddNewBodyConditionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735667E922667FC100BC0A2A /* AddNewBodyConditionVC.swift */; };
 		739DC93F225FE33A0048221C /* CubicCurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DC93E225FE33A0048221C /* CubicCurveAlgorithm.swift */; };
 		739DC946225FE3D40048221C /* TotalOfStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DC942225FE3D40048221C /* TotalOfStepsView.swift */; };
@@ -147,6 +148,7 @@
 		73258069223F91AB00F05A90 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		732612652285F3BF00824985 /* TotalOfStepsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalOfStepsVC.swift; sourceTree = "<group>"; };
 		7335DB9222930887007C6B71 /* BestScoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestScoreVC.swift; sourceTree = "<group>"; };
+		73523AFE229C83E70009BBBF /* AddNewExerciseVС.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddNewExerciseVС.swift"; sourceTree = "<group>"; };
 		735667E922667FC100BC0A2A /* AddNewBodyConditionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBodyConditionVC.swift; sourceTree = "<group>"; };
 		739DC93E225FE33A0048221C /* CubicCurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicCurveAlgorithm.swift; sourceTree = "<group>"; };
 		739DC942225FE3D40048221C /* TotalOfStepsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalOfStepsView.swift; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				7335DB9222930887007C6B71 /* BestScoreVC.swift */,
 				731D08DE229BD6B700D81EB4 /* ExercisesVC.swift */,
 				731D08E2229C5F5200D81EB4 /* ExercisesDetailVC.swift */,
+				73523AFE229C83E70009BBBF /* AddNewExerciseVС.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				25969C0B22662CD000A116FA /* ReusableTableView.swift in Sources */,
 				73D4AC162254EB83005259DF /* UIViewX.swift in Sources */,
 				73258064223E5ACF00F05A90 /* SAButton.swift in Sources */,
+				73523AFF229C83E70009BBBF /* AddNewExerciseVС.swift in Sources */,
 				257DFC0722662997008B762F /* Date.swift in Sources */,
 				250521772266317600FBA5E0 /* BodyConditionsManager.swift in Sources */,
 				257DFC1222662998008B762F /* Int.swift in Sources */,

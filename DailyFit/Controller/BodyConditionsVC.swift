@@ -109,7 +109,7 @@ private extension BodyConditionsVC {
         lblHeight.text = String(bodyCondition.height.orZero)
         lblChest.text = String(bodyCondition.chest.orZero)
         lblBiceps.text = String(bodyCondition.biceps.orZero)
-        lblDate.text = DateFormatterHelper.convertToString(from: bodyCondition.date.orCurrent)
+        lblDate.text = DateFormatterHelper.convertToString(from: bodyCondition.date.orCurrent, with: .weekDayMonthDayHHmm)
     }
 }
 

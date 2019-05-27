@@ -12,7 +12,7 @@
 import UIKit
 
 class Data {
-    
+
     static func getData(completion: @escaping ([ExercisesModel]) -> ()) {
         DispatchQueue.global(qos: .userInteractive).async {
             var data = [ExercisesModel]()
