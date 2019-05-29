@@ -1098,7 +1098,7 @@
             </objects>
             <point key="canvasLocation" x="7366" y="207"/>
         </scene>
-        <!--CalendarVC-->
+        <!--Calendar-->
         <scene sceneID="dB3-7V-ovb">
             <objects>
                 <viewController id="6cL-P8-aXo" customClass="CalendarVC" customModule="CalendarView" customModuleProvider="target" sceneMemberID="viewController">
@@ -1110,7 +1110,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APy-Q9-hJU" customClass="CalendarView" customModule="CalendarView" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APy-Q9-hJU" customClass="CalendarView" customModule="DailyFit" customModuleProvider="target">
                                 <rect key="frame" x="16" y="104" width="343" height="343"/>
                                 <color key="backgroundColor" red="0.94004629630000003" green="0.80393518519999996" blue="0.87748842589999998" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1132,27 +1132,31 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuE-0R-HW1">
                                         <rect key="frame" x="8" y="0.0" width="154" height="30"/>
-                                        <state key="normal" title="previous month"/>
+                                        <state key="normal" title="previous month">
+                                            <color key="titleColor" red="0.4549019608" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
                                         <connections>
                                             <action selector="goToPreviousMonth:" destination="6cL-P8-aXo" eventType="touchUpInside" id="hQ9-zY-Bvt"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lK-yu-EcU" userLabel="separator">
                                         <rect key="frame" x="170" y="0.0" width="3" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="3" id="QxC-1F-Uup"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4w-hk-Joo">
                                         <rect key="frame" x="181" y="0.0" width="154" height="30"/>
-                                        <state key="normal" title="next month"/>
+                                        <state key="normal" title="next month">
+                                            <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="goToNextMonth:" destination="6cL-P8-aXo" eventType="touchUpInside" id="pCC-fs-GRj"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="7lK-yu-EcU" secondAttribute="bottom" id="8k1-BY-3k1"/>
                                     <constraint firstItem="7lK-yu-EcU" firstAttribute="leading" secondItem="WuE-0R-HW1" secondAttribute="trailing" constant="8" id="Ac7-ji-qBa"/>
@@ -1182,6 +1186,7 @@
                             <constraint firstAttribute="trailing" secondItem="APy-Q9-hJU" secondAttribute="trailing" constant="16" id="dIZ-hT-iq2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Calendar" id="m7Z-9m-6eQ"/>
                     <connections>
                         <outlet property="calendarView" destination="APy-Q9-hJU" id="Gei-Gx-tAi"/>
                         <outlet property="datePicker" destination="Yfc-39-yPc" id="zgH-31-vTX"/>

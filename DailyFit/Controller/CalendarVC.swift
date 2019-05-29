@@ -1,27 +1,10 @@
-/*
- * ViewController.swift
- * Created by Michael Michailidis on 01/04/2015.
- * http://blog.karmadust.com/
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- *
- */
+//
+//  CalendarVC.swift
+//  DailyFit
+//
+//  Created by Taras Vitoshko on 3/17/19.
+//  Copyright © 2019 Taras Vitoshko. All rights reserved.
+//
 
 import UIKit
 import EventKit
@@ -37,15 +20,16 @@ class CalendarVC: UIViewController, CalendarViewDataSource, CalendarViewDelegate
     override func viewDidLoad() {
         
         super.viewDidLoad()
+
         
         CalendarView.Style.cellShape                = .bevel(8.0)
         CalendarView.Style.cellColorDefault         = UIColor.clear
         CalendarView.Style.cellColorToday           = UIColor(red:1.00, green:0.84, blue:0.64, alpha:1.00)
-        CalendarView.Style.cellSelectedBorderColor  = UIColor(red:1.00, green:0.63, blue:0.24, alpha:1.00)
+        CalendarView.Style.cellSelectedBorderColor  = UIColor.blue
         CalendarView.Style.cellEventColor           = UIColor(red:1.00, green:0.63, blue:0.24, alpha:1.00)
         CalendarView.Style.headerTextColor          = UIColor.white
         CalendarView.Style.cellTextColorDefault     = UIColor.white
-        CalendarView.Style.cellTextColorToday       = UIColor.orange
+        CalendarView.Style.cellTextColorToday       = UIColor.black
         
         CalendarView.Style.firstWeekday             = .sunday
         
@@ -83,12 +67,13 @@ class CalendarVC: UIViewController, CalendarViewDataSource, CalendarViewDelegate
         #if KDCALENDAR_EVENT_MANAGER_ENABLED
         self.calendarView.loadEvents() { error in
             if error != nil {
-                let message = "The karmadust calender could not load system events. It is possibly a problem with permissions"
+                let message = "The DailyFit could not load system events. It is possibly a problem with permissions"
                 let alert = UIAlertController(title: "Events Loading Error", message: message, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
         }
+
         #endif
         
         
@@ -160,7 +145,7 @@ class CalendarVC: UIViewController, CalendarViewDataSource, CalendarViewDelegate
         
         let addEventAction = UIAlertAction(title: "Create", style: .default, handler: { (action) -> Void in
             let title = alert.textFields?.first?.text
-         //   self.calendarView.addEvent(title!, date: date)
+            self.calendarView.addEvent(title!, date: date)
         })
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
