@@ -275,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pBo-qv-PTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5072.8000000000002" y="699.7536945812808"/>
+            <point key="canvasLocation" x="5073" y="1057"/>
         </scene>
         <!--Add New Body ConditionVC-->
         <scene sceneID="4QG-i9-csC">
@@ -372,7 +372,7 @@
                                 <color key="textColor" red="0.45490196078431372" green="0.97647058823529409" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prflTemplate" translatesAutoresizingMaskIntoConstraints="NO" id="hjw-dC-CzR">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="hjw-dC-CzR">
                                 <rect key="frame" x="0.0" y="147.33333333333334" width="375" height="205.00000000000003"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="205" id="zdT-AQ-Abm"/>
@@ -405,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TtM-br-4hr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6093.6000000000004" y="699.7536945812808"/>
+            <point key="canvasLocation" x="6137" y="1057"/>
         </scene>
         <!--Settings-->
         <scene sceneID="PbA-t4-CCf">
@@ -528,7 +528,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4N-tu-cK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5072.8000000000002" y="1432.7586206896553"/>
+            <point key="canvasLocation" x="5073" y="1765"/>
         </scene>
         <!--DashBoard-->
         <scene sceneID="S9e-tr-hdz">
@@ -639,6 +639,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKX-Rg-qNY">
                                                 <rect key="frame" x="0.0" y="470.66666666666669" width="44" height="47.000000000000057"/>
                                                 <state key="normal" image="Achievements"/>
+                                                <connections>
+                                                    <segue destination="6cL-P8-aXo" kind="show" id="vfW-Qi-oeO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rki-yv-iEt">
                                                 <rect key="frame" x="0.0" y="593" width="44" height="47"/>
@@ -817,7 +820,7 @@
                                 <color key="textColor" red="0.4549019608" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prflTemplate" translatesAutoresizingMaskIntoConstraints="NO" id="mfI-aJ-dqR">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addExercisePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="mfI-aJ-dqR">
                                 <rect key="frame" x="0.0" y="152" width="375" height="228"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="228" id="yQ9-lT-KTE"/>
@@ -930,7 +933,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deadlift" translatesAutoresizingMaskIntoConstraints="NO" id="tn9-qP-7zi">
-                                <rect key="frame" x="0.0" y="88" width="375" height="220.00000000000006"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="ibz-1A-LhM"/>
                                 </constraints>
@@ -1095,6 +1098,99 @@
             </objects>
             <point key="canvasLocation" x="7366" y="207"/>
         </scene>
+        <!--CalendarVC-->
+        <scene sceneID="dB3-7V-ovb">
+            <objects>
+                <viewController id="6cL-P8-aXo" customClass="CalendarVC" customModule="CalendarView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Typ-dO-uI3"/>
+                        <viewControllerLayoutGuide type="bottom" id="VoP-Or-jJE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eWI-nW-FGb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APy-Q9-hJU" customClass="CalendarView" customModule="CalendarView" customModuleProvider="target">
+                                <rect key="frame" x="16" y="104" width="343" height="343"/>
+                                <color key="backgroundColor" red="0.94004629630000003" green="0.80393518519999996" blue="0.87748842589999998" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="APy-Q9-hJU" secondAttribute="height" id="AkO-SU-In2"/>
+                                </constraints>
+                            </view>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yfc-39-yPc">
+                                <rect key="frame" x="16" y="542" width="343" height="216"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <date key="date" timeIntervalSinceReferenceDate="482061469.277242">
+                                    <!--2016-04-11 09:57:49 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="onValueChange:" destination="6cL-P8-aXo" eventType="valueChanged" id="oTT-5x-N9W"/>
+                                </connections>
+                            </datePicker>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LS9-OE-V7p">
+                                <rect key="frame" x="16" y="455" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuE-0R-HW1">
+                                        <rect key="frame" x="8" y="0.0" width="154" height="30"/>
+                                        <state key="normal" title="previous month"/>
+                                        <connections>
+                                            <action selector="goToPreviousMonth:" destination="6cL-P8-aXo" eventType="touchUpInside" id="hQ9-zY-Bvt"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lK-yu-EcU" userLabel="separator">
+                                        <rect key="frame" x="170" y="0.0" width="3" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="3" id="QxC-1F-Uup"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4w-hk-Joo">
+                                        <rect key="frame" x="181" y="0.0" width="154" height="30"/>
+                                        <state key="normal" title="next month"/>
+                                        <connections>
+                                            <action selector="goToNextMonth:" destination="6cL-P8-aXo" eventType="touchUpInside" id="pCC-fs-GRj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7lK-yu-EcU" secondAttribute="bottom" id="8k1-BY-3k1"/>
+                                    <constraint firstItem="7lK-yu-EcU" firstAttribute="leading" secondItem="WuE-0R-HW1" secondAttribute="trailing" constant="8" id="Ac7-ji-qBa"/>
+                                    <constraint firstAttribute="bottom" secondItem="WuE-0R-HW1" secondAttribute="bottom" id="BjO-RP-rrL"/>
+                                    <constraint firstItem="i4w-hk-Joo" firstAttribute="top" secondItem="LS9-OE-V7p" secondAttribute="top" id="CJo-oD-E7D"/>
+                                    <constraint firstItem="WuE-0R-HW1" firstAttribute="leading" secondItem="LS9-OE-V7p" secondAttribute="leading" constant="8" id="DOB-gg-8X8"/>
+                                    <constraint firstItem="7lK-yu-EcU" firstAttribute="centerX" secondItem="LS9-OE-V7p" secondAttribute="centerX" id="cID-1c-irJ"/>
+                                    <constraint firstItem="7lK-yu-EcU" firstAttribute="top" secondItem="LS9-OE-V7p" secondAttribute="top" id="jlX-9L-G6E"/>
+                                    <constraint firstAttribute="trailing" secondItem="i4w-hk-Joo" secondAttribute="trailing" constant="8" id="m9A-5h-Wp9"/>
+                                    <constraint firstAttribute="bottom" secondItem="i4w-hk-Joo" secondAttribute="bottom" id="mL9-eM-4Xx"/>
+                                    <constraint firstAttribute="height" constant="30" id="rAz-SN-eoJ"/>
+                                    <constraint firstItem="i4w-hk-Joo" firstAttribute="leading" secondItem="7lK-yu-EcU" secondAttribute="trailing" constant="8" id="rw4-bn-kj6"/>
+                                    <constraint firstItem="WuE-0R-HW1" firstAttribute="top" secondItem="LS9-OE-V7p" secondAttribute="top" id="t8l-DH-pXL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16527646779999999" green="0.19973689319999999" blue="0.23137772079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="APy-Q9-hJU" firstAttribute="leading" secondItem="eWI-nW-FGb" secondAttribute="leading" constant="16" id="4BK-Qu-wf1"/>
+                            <constraint firstItem="APy-Q9-hJU" firstAttribute="top" secondItem="Typ-dO-uI3" secondAttribute="bottom" constant="16" id="5ST-B8-672"/>
+                            <constraint firstItem="LS9-OE-V7p" firstAttribute="top" secondItem="APy-Q9-hJU" secondAttribute="bottom" constant="8" id="9YK-1X-jNX"/>
+                            <constraint firstItem="Yfc-39-yPc" firstAttribute="leading" secondItem="eWI-nW-FGb" secondAttribute="leading" constant="16" id="Ib7-WZ-LUs"/>
+                            <constraint firstItem="VoP-Or-jJE" firstAttribute="top" secondItem="Yfc-39-yPc" secondAttribute="bottom" constant="20" id="Jib-yQ-huQ"/>
+                            <constraint firstItem="LS9-OE-V7p" firstAttribute="trailing" secondItem="APy-Q9-hJU" secondAttribute="trailing" id="Ob8-xe-RAN"/>
+                            <constraint firstAttribute="trailing" secondItem="Yfc-39-yPc" secondAttribute="trailing" constant="16" id="URh-6C-JdS"/>
+                            <constraint firstItem="LS9-OE-V7p" firstAttribute="leading" secondItem="APy-Q9-hJU" secondAttribute="leading" id="Wdv-Sw-ZPO"/>
+                            <constraint firstAttribute="trailing" secondItem="APy-Q9-hJU" secondAttribute="trailing" constant="16" id="dIZ-hT-iq2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calendarView" destination="APy-Q9-hJU" id="Gei-Gx-tAi"/>
+                        <outlet property="datePicker" destination="Yfc-39-yPc" id="zgH-31-vTX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F9K-Fd-3SN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5073" y="207"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Achievements" width="41" height="47"/>
@@ -1105,6 +1201,8 @@
         <image name="Settings" width="41" height="47"/>
         <image name="Taras Vitoshko small" width="2115" height="2260"/>
         <image name="Training templates" width="41" height="47"/>
+        <image name="addExercisePhoto" width="86" height="66"/>
+        <image name="addPhoto" width="96" height="78"/>
         <image name="deadlift" width="620" height="347"/>
         <image name="legpress" width="960" height="960"/>
         <image name="prflTemplate" width="768" height="768"/>
