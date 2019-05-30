@@ -12,17 +12,18 @@ class AddNewExerciseVС: UIViewController {
     @IBOutlet weak var exerciseNameTextField: UITextField!
     @IBOutlet weak var exerciseImageView: UIImageView!
     @IBOutlet weak var exerciseTypeTextField: UITextField!
-    @IBOutlet weak var exerciseDecriptionTextField: UITextField!
+    @IBOutlet weak var exerciseDecriptionTextView: UITextView!
+    
     var myImage : UIImage?
     
     @IBAction func saveExerciseButton(_ sender: Any) {
-        if(exerciseNameTextField.text == "" || exerciseTypeTextField.text == "" || exerciseDecriptionTextField.text == ""){
-            
-                ExerciseFunction.addData(exerciseModel: ExercisesModel(title: exerciseNameTextField.text!, subTitle: exerciseTypeTextField.text!, image: exerciseImageView.image, description: exerciseDecriptionTextField.text!))
-        navigationController?.popViewController(animated: true)
-        }
+        
+        if(exerciseNameTextField.text == "" || exerciseTypeTextField.text == "" || exerciseDecriptionTextView.text == ""){
+            Alert.showIncompleteField(on: self) }
         else {
-            Alert.showIncompleteField(on: self)
+            ExerciseFunction.addData(exerciseModel: ExercisesModel(title: exerciseNameTextField.text!, subTitle: exerciseTypeTextField.text!, image: exerciseImageView.image, description: exerciseDecriptionTextView.text!))
+            
+            navigationController?.popViewController(animated: true)
         }
         
     }
