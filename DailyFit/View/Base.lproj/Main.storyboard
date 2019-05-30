@@ -789,7 +789,7 @@
                     <navigationItem key="navigationItem" title="Exercises" id="P2R-36-e11">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zYs-6U-t5O">
                             <connections>
-                                <segue destination="zeh-3Q-De5" kind="show" id="1s4-ng-Vxu"/>
+                                <segue destination="zeh-3Q-De5" kind="show" identifier="toAddExerciseSegue" id="1s4-ng-Vxu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1101,7 +1101,7 @@
         <!--Calendar-->
         <scene sceneID="dB3-7V-ovb">
             <objects>
-                <viewController id="6cL-P8-aXo" customClass="CalendarVC" customModule="CalendarView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6cL-P8-aXo" customClass="CalendarVC" customModule="DailyFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Typ-dO-uI3"/>
                         <viewControllerLayoutGuide type="bottom" id="VoP-Or-jJE"/>

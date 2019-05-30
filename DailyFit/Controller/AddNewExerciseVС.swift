@@ -16,18 +16,15 @@ class AddNewExerciseVС: UIViewController {
     var myImage : UIImage?
     
     @IBAction func saveExerciseButton(_ sender: Any) {
-        if(exerciseNameTextField.text == "" || exerciseTypeTextField.text == "" || exerciseDecriptionTextField.text == "")
-        {
-            Alert.showIncompleteField(on: self)
+        if(exerciseNameTextField.text == "" || exerciseTypeTextField.text == "" || exerciseDecriptionTextField.text == ""){
+            
+                ExerciseFunction.addData(exerciseModel: ExercisesModel(title: exerciseNameTextField.text!, subTitle: exerciseTypeTextField.text!, image: exerciseImageView.image, description: exerciseDecriptionTextField.text!))
+        navigationController?.popViewController(animated: true)
         }
         else {
-            
-            let exerciseName: String = exerciseNameTextField.text.orEmpty
-            let exerciseType: String = exerciseTypeTextField.text.orEmpty
-            let exerciseDescription: String = exerciseDecriptionTextField.text.orEmpty
-       
-            navigationController?.popViewController(animated: true)
+            Alert.showIncompleteField(on: self)
         }
+        
     }
     
     
@@ -73,7 +70,7 @@ extension AddNewExerciseVС: UIImagePickerControllerDelegate, UINavigationContro
         picker.dismiss(animated: true, completion: nil)
         
     }
-    
+    //MARK:- Image picker controller did cancel
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }

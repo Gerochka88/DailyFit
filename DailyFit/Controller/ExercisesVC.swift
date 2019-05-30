@@ -12,7 +12,6 @@ class ExercisesVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
    
-    var tableData: [ExercisesModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +20,15 @@ class ExercisesVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        Data.getData { (data) in
-            self.tableData = data
-            self.tableView.reloadData()
-        }
+        ExerciseFunction.getData(completion: { [weak self] in
+            self?.tableView.reloadData()
+        })
+        
     }
+    
     override func viewDidAppear(_ animated: Bool) {
          setupNavBar()
+        self.tableView.reloadData()
     }
     func setupNavBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -46,19 +47,19 @@ class ExercisesVC: UIViewController {
     extension ExercisesVC: UITableViewDataSource , UITableViewDelegate {
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return tableData.count
+            return ExerciseManager.exerciseModels.count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ExercisesTableViewCell
             
-            cell.setup(exerciseModel: tableData[indexPath.row])
+            cell.setup(exerciseModel: ExerciseManager.exerciseModels[indexPath.row])
             
             return cell
         }
         
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           let exercise = tableData[indexPath.row]
+           let exercise = ExerciseManager.exerciseModels[indexPath.row]
         performSegue(withIdentifier: "ExercisesToDetail", sender: exercise)
         }
         

@@ -75,6 +75,7 @@
 		737585F4229F24E500DA5859 /* CalendarView+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737585EB229F24E500DA5859 /* CalendarView+DataSource.swift */; };
 		737585F5229F24E500DA5859 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737585EC229F24E500DA5859 /* CalendarView.swift */; };
 		737585F7229F24F600DA5859 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737585F6229F24F600DA5859 /* CalendarVC.swift */; };
+		7378021F229FC112008E3E97 /* ExerciseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378021E229FC112008E3E97 /* ExerciseManager.swift */; };
 		739DC93F225FE33A0048221C /* CubicCurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DC93E225FE33A0048221C /* CubicCurveAlgorithm.swift */; };
 		739DC946225FE3D40048221C /* TotalOfStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DC942225FE3D40048221C /* TotalOfStepsView.swift */; };
 		739DC947225FE3D40048221C /* BestScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DC943225FE3D40048221C /* BestScoreView.swift */; };
@@ -93,7 +94,7 @@
 		73D4AC1D2254EB83005259DF /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC122254EB83005259DF /* UIViewAnchorPoint.swift */; };
 		73D4AC1E2254EB83005259DF /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC132254EB83005259DF /* UIVisualEffectViewX.swift */; };
 		73D4AC1F2254EB83005259DF /* UIImageViewWithMaskAndShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC142254EB83005259DF /* UIImageViewWithMaskAndShadow.swift */; };
-		73D4AC222254EBCF005259DF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC202254EBCF005259DF /* Data.swift */; };
+		73D4AC222254EBCF005259DF /* ExerciseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC202254EBCF005259DF /* ExerciseFunction.swift */; };
 		73D4AC232254EBCF005259DF /* ExercisesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC212254EBCF005259DF /* ExercisesModel.swift */; };
 		73D4AC272254ECF3005259DF /* DashBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC262254ECF3005259DF /* DashBoardVC.swift */; };
 /* End PBXBuildFile section */
@@ -170,6 +171,7 @@
 		737585EB229F24E500DA5859 /* CalendarView+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+DataSource.swift"; sourceTree = "<group>"; };
 		737585EC229F24E500DA5859 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		737585F6229F24F600DA5859 /* CalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		7378021E229FC112008E3E97 /* ExerciseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseManager.swift; sourceTree = "<group>"; };
 		739DC93E225FE33A0048221C /* CubicCurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicCurveAlgorithm.swift; sourceTree = "<group>"; };
 		739DC942225FE3D40048221C /* TotalOfStepsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalOfStepsView.swift; sourceTree = "<group>"; };
 		739DC943225FE3D40048221C /* BestScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestScoreView.swift; sourceTree = "<group>"; };
@@ -188,7 +190,7 @@
 		73D4AC122254EB83005259DF /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
 		73D4AC132254EB83005259DF /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
 		73D4AC142254EB83005259DF /* UIImageViewWithMaskAndShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewWithMaskAndShadow.swift; sourceTree = "<group>"; };
-		73D4AC202254EBCF005259DF /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		73D4AC202254EBCF005259DF /* ExerciseFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseFunction.swift; sourceTree = "<group>"; };
 		73D4AC212254EBCF005259DF /* ExercisesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesModel.swift; sourceTree = "<group>"; };
 		73D4AC262254ECF3005259DF /* DashBoardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardVC.swift; sourceTree = "<group>"; };
 		ACAEFD7B8D3D2B2EA55A0E5F /* Pods_DailyFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,6 +215,7 @@
 			children = (
 				250521782266347400FBA5E0 /* DateFormatterHelper.swift */,
 				250521762266317600FBA5E0 /* BodyConditionsManager.swift */,
+				7378021E229FC112008E3E97 /* ExerciseManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -391,7 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				739DC93E225FE33A0048221C /* CubicCurveAlgorithm.swift */,
-				73D4AC202254EBCF005259DF /* Data.swift */,
+				73D4AC202254EBCF005259DF /* ExerciseFunction.swift */,
 				73D4AC212254EBCF005259DF /* ExercisesModel.swift */,
 				73258069223F91AB00F05A90 /* Alert.swift */,
 				257DFBDF22662886008B762F /* BodyCondition.swift */,
@@ -569,6 +572,7 @@
 				257DFC1B22662998008B762F /* FuctionComposition.swift in Sources */,
 				739DC93F225FE33A0048221C /* CubicCurveAlgorithm.swift in Sources */,
 				257DFC1022662998008B762F /* DispatchQueue.swift in Sources */,
+				7378021F229FC112008E3E97 /* ExerciseManager.swift in Sources */,
 				257DFC1F22662998008B762F /* Optional.swift in Sources */,
 				25969C0B22662CD000A116FA /* ReusableTableView.swift in Sources */,
 				73D4AC162254EB83005259DF /* UIViewX.swift in Sources */,
@@ -601,7 +605,7 @@
 				257DFC0922662997008B762F /* NotificationName.swift in Sources */,
 				737585F1229F24E500DA5859 /* CalendarView+Style.swift in Sources */,
 				25969C0D22662CD000A116FA /* NibLoadable.swift in Sources */,
-				73D4AC222254EBCF005259DF /* Data.swift in Sources */,
+				73D4AC222254EBCF005259DF /* ExerciseFunction.swift in Sources */,
 				257DFC0F22662998008B762F /* CLLocationCoordinate2D.swift in Sources */,
 				7335DB9322930887007C6B71 /* BestScoreVC.swift in Sources */,
 				257DFC0B22662997008B762F /* FunctionApplication.swift in Sources */,
