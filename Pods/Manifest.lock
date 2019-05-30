@@ -1,6 +1,6 @@
 PODS:
-  - FlexiblePageControl (1.0.7)
-  - IQKeyboardManager (6.2.1)
+  - FlexiblePageControl (1.0.8)
+  - IQKeyboardManager (6.3.0)
   - Macaw (0.9.5):
     - SWXMLHash
   - SWXMLHash (4.9.0)
@@ -18,11 +18,11 @@ SPEC REPOS:
     - SWXMLHash
 
 SPEC CHECKSUMS:
-  FlexiblePageControl: 2ce8446da3d75df6432dbad7b9e19151629dae62
-  IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
+  FlexiblePageControl: 07f7765054f16b3f0bc3f14dfd95ab5f45817ea4
+  IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
   Macaw: 10bf9e327cb75f24e3225d5229a80ed544df85f0
   SWXMLHash: 87b0006848a548b7f9485b40bc71721b3ae39add
 
 PODFILE CHECKSUM: ae492a006c6df1e526ccbd0c75cad4352906761f
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.0

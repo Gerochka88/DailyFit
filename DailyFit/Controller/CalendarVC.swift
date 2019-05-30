@@ -64,7 +64,6 @@ class CalendarVC: UIViewController, CalendarViewDataSource, CalendarViewDelegate
         let tomorrow = self.calendarView.calendar.date(byAdding: tomorrowComponents, to: today)!
         self.calendarView.selectDate(tomorrow)
 
-        #if KDCALENDAR_EVENT_MANAGER_ENABLED
         self.calendarView.loadEvents() { error in
             if error != nil {
                 let message = "The DailyFit could not load system events. It is possibly a problem with permissions"
@@ -73,8 +72,6 @@ class CalendarVC: UIViewController, CalendarViewDataSource, CalendarViewDelegate
                 self.present(alert, animated: true, completion: nil)
             }
         }
-
-        #endif
         
         
         self.calendarView.setDisplayDate(today)
@@ -145,7 +142,7 @@ class CalendarVC: UIViewController, CalendarViewDataSource, CalendarViewDelegate
         
         let addEventAction = UIAlertAction(title: "Create", style: .default, handler: { (action) -> Void in
             let title = alert.textFields?.first?.text
-           // self.calendarView.addEvent(title!, date: date)
+            self.calendarView.addEvent(title!, date: date)
         })
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
