@@ -45,7 +45,6 @@
 		25969C0B22662CD000A116FA /* ReusableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25969C0722662CD000A116FA /* ReusableTableView.swift */; };
 		25969C0C22662CD000A116FA /* ReusableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25969C0822662CD000A116FA /* ReusableCollectionView.swift */; };
 		25969C0D22662CD000A116FA /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25969C0922662CD000A116FA /* NibLoadable.swift */; };
-		2B9EE6EB3000951C55AEFEE0 /* Pods_DailyFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAEFD7B8D3D2B2EA55A0E5F /* Pods_DailyFit.framework */; };
 		730063ED225C8CD900F8C755 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730063EC225C8CD900F8C755 /* HealthKit.framework */; };
 		730063F0225CA8C600F8C755 /* BodyConditionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730063EF225CA8C600F8C755 /* BodyConditionsVC.swift */; };
 		731D08DF229BD6B700D81EB4 /* ExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731D08DE229BD6B700D81EB4 /* ExercisesVC.swift */; };
@@ -97,10 +96,10 @@
 		73D4AC222254EBCF005259DF /* ExerciseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC202254EBCF005259DF /* ExerciseFunction.swift */; };
 		73D4AC232254EBCF005259DF /* ExercisesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC212254EBCF005259DF /* ExercisesModel.swift */; };
 		73D4AC272254ECF3005259DF /* DashBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC262254ECF3005259DF /* DashBoardVC.swift */; };
+		C74A486D9D07C0B4A3D3EC94 /* Pods_DailyFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB6781786BD3ED5FFC268FE /* Pods_DailyFit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B5F1194972FD4D0B7D35D4C /* Pods-DailyFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyFit.release.xcconfig"; path = "Target Support Files/Pods-DailyFit/Pods-DailyFit.release.xcconfig"; sourceTree = "<group>"; };
 		250521762266317600FBA5E0 /* BodyConditionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyConditionsManager.swift; sourceTree = "<group>"; };
 		250521782266347400FBA5E0 /* DateFormatterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
 		257DFBDF22662886008B762F /* BodyCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyCondition.swift; sourceTree = "<group>"; };
@@ -193,8 +192,9 @@
 		73D4AC202254EBCF005259DF /* ExerciseFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseFunction.swift; sourceTree = "<group>"; };
 		73D4AC212254EBCF005259DF /* ExercisesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesModel.swift; sourceTree = "<group>"; };
 		73D4AC262254ECF3005259DF /* DashBoardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardVC.swift; sourceTree = "<group>"; };
-		ACAEFD7B8D3D2B2EA55A0E5F /* Pods_DailyFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC6D25E7C6B223FC840A550B /* Pods-DailyFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyFit.debug.xcconfig"; path = "Target Support Files/Pods-DailyFit/Pods-DailyFit.debug.xcconfig"; sourceTree = "<group>"; };
+		834B2A85B281BDDE33324FB0 /* Pods-DailyFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyFit.release.xcconfig"; path = "Target Support Files/Pods-DailyFit/Pods-DailyFit.release.xcconfig"; sourceTree = "<group>"; };
+		8AF9DDDF4B8680F8B79B9E3E /* Pods-DailyFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyFit.debug.xcconfig"; path = "Target Support Files/Pods-DailyFit/Pods-DailyFit.debug.xcconfig"; sourceTree = "<group>"; };
+		ACB6781786BD3ED5FFC268FE /* Pods_DailyFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				730063ED225C8CD900F8C755 /* HealthKit.framework in Frameworks */,
-				2B9EE6EB3000951C55AEFEE0 /* Pods_DailyFit.framework in Frameworks */,
+				C74A486D9D07C0B4A3D3EC94 /* Pods_DailyFit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				730063EC225C8CD900F8C755 /* HealthKit.framework */,
-				ACAEFD7B8D3D2B2EA55A0E5F /* Pods_DailyFit.framework */,
+				ACB6781786BD3ED5FFC268FE /* Pods_DailyFit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -418,8 +418,8 @@
 		7C5A70A1C978CAB44EE2025F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EC6D25E7C6B223FC840A550B /* Pods-DailyFit.debug.xcconfig */,
-				0B5F1194972FD4D0B7D35D4C /* Pods-DailyFit.release.xcconfig */,
+				8AF9DDDF4B8680F8B79B9E3E /* Pods-DailyFit.debug.xcconfig */,
+				834B2A85B281BDDE33324FB0 /* Pods-DailyFit.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -431,11 +431,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7325805B223E56ED00F05A90 /* Build configuration list for PBXNativeTarget "DailyFit" */;
 			buildPhases = (
-				27607317E9BE41C40844BA15 /* [CP] Check Pods Manifest.lock */,
+				617E1E928CDD77A80BE2F3C6 /* [CP] Check Pods Manifest.lock */,
 				73258042223E56EB00F05A90 /* Sources */,
 				73258043223E56EB00F05A90 /* Frameworks */,
 				73258044223E56EB00F05A90 /* Resources */,
-				EF51D2553EBB26DFD0F3ED10 /* [CP] Embed Pods Frameworks */,
+				EF06BECC4BE3C530A278727E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -500,7 +500,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27607317E9BE41C40844BA15 /* [CP] Check Pods Manifest.lock */ = {
+		617E1E928CDD77A80BE2F3C6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -522,17 +522,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF51D2553EBB26DFD0F3ED10 /* [CP] Embed Pods Frameworks */ = {
+		EF06BECC4BE3C530A278727E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DailyFit/Pods-DailyFit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyFit/Pods-DailyFit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FlexiblePageControl/FlexiblePageControl.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DailyFit/Pods-DailyFit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexiblePageControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -773,7 +784,7 @@
 		};
 		7325805C223E56ED00F05A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC6D25E7C6B223FC840A550B /* Pods-DailyFit.debug.xcconfig */;
+			baseConfigurationReference = 8AF9DDDF4B8680F8B79B9E3E /* Pods-DailyFit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DailyFit/DailyFit.entitlements;
@@ -794,7 +805,7 @@
 		};
 		7325805D223E56ED00F05A90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B5F1194972FD4D0B7D35D4C /* Pods-DailyFit.release.xcconfig */;
+			baseConfigurationReference = 834B2A85B281BDDE33324FB0 /* Pods-DailyFit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DailyFit/DailyFit.entitlements;

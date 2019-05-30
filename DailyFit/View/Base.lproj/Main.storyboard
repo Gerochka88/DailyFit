@@ -1198,7 +1198,7 @@
                             <constraint firstAttribute="trailing" secondItem="APy-Q9-hJU" secondAttribute="trailing" constant="16" id="dIZ-hT-iq2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Calendar" id="m7Z-9m-6eQ"/>
+                    <navigationItem key="navigationItem" title="Calendar" largeTitleDisplayMode="never" id="m7Z-9m-6eQ"/>
                     <connections>
                         <outlet property="calendarView" destination="APy-Q9-hJU" id="Gei-Gx-tAi"/>
                         <outlet property="datePicker" destination="Yfc-39-yPc" id="zgH-31-vTX"/>

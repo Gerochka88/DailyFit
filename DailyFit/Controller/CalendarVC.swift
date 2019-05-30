@@ -25,30 +25,23 @@ class CalendarVC: UIViewController, CalendarViewDataSource, CalendarViewDelegate
         CalendarView.Style.cellShape                = .bevel(8.0)
         CalendarView.Style.cellColorDefault         = UIColor.clear
         CalendarView.Style.cellColorToday           = UIColor(red:1.00, green:0.84, blue:0.64, alpha:1.00)
-        CalendarView.Style.cellSelectedBorderColor  = UIColor.blue
+        CalendarView.Style.cellSelectedBorderColor  = UIColor(red: 0.4549, green: 0.9765, blue: 0.9922, alpha: 1.0)
         CalendarView.Style.cellEventColor           = UIColor(red:1.00, green:0.63, blue:0.24, alpha:1.00)
         CalendarView.Style.headerTextColor          = UIColor.white
         CalendarView.Style.cellTextColorDefault     = UIColor.white
         CalendarView.Style.cellTextColorToday       = UIColor.black
-        
         CalendarView.Style.firstWeekday             = .sunday
-        
         CalendarView.Style.locale                   = Locale(identifier: "en_US")
-        
         CalendarView.Style.timeZone                 = TimeZone(abbreviation: "UTC")!
-        
         CalendarView.Style.hideCellsOutsideDateRange = false
         CalendarView.Style.changeCellColorOutsideRange = false
         
         calendarView.dataSource = self
         calendarView.delegate = self
-        
         calendarView.direction = .horizontal
         calendarView.multipleSelectionEnable = false
         calendarView.marksWeekends = true
-        
-        
-        calendarView.backgroundColor = UIColor(red:0.31, green:0.44, blue:0.47, alpha:1.00)
+        calendarView.backgroundColor = UIColor(red: 0.1647, green: 0.2, blue: 0.2314, alpha: 1.0) /* #2a333b */
     }
     
     override func viewDidAppear(_ animated: Bool) {
