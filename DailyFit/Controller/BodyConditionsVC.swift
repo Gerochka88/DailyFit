@@ -71,8 +71,8 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
         let date = Date(timeIntervalSinceNow: seconds)
         print(date)
         let content = UNMutableNotificationContent()
-        content.title = "Hey hey"
-        content.body = "BUT STILL YOU ARE AMAZING PROGRAMMER!!!"
+        content.title = "Calm down, bro."
+        content.body = "Your hearth rate is over 180! That's could be dangerous for your health! stop and get rest!"
         content.sound = UNNotificationSound.default
         
         let calendar = Calendar(identifier: .gregorian)

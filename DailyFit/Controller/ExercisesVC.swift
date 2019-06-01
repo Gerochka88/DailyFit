@@ -31,7 +31,7 @@ class ExercisesVC: UIViewController {
         self.tableView.reloadData()
     }
     func setupNavBar() {
-        navigationController?.navigationBar.prefersLargeTitles = true
+       // navigationController?.navigationBar.prefersLargeTitles = true
         let searchController = UISearchController(searchResultsController: nil)
         navigationItem.searchController = searchController
     }

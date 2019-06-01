@@ -34,15 +34,16 @@ open class BestScoreView: MacawView {
                     (x: 110.0, y: 10.0),
                     (x: 120.0, y: 60.0),
                     (x: 130.0, y: 60.0),
-                    (x: 150.0, y: 90.0),
-                    (x: 160.0, y: 100.0),
+                    (x: 150.0, y: 70.0),
+                    (x: 160.0, y: 50.0),
                     (x: 180.0, y: 70.0),
-                    (x: 200.0, y: 80.0),
-                    (x: 210.0, y: 50.0),
-                    (x: 240.0, y: 30.0)
+                    (x: 200.0, y: 30.0),
+                    (x: 210.0, y: 15.0),
+                    (x: 240.0, y: 25.0)
                 ],
-                leftGradientColor: 0xff7200,
-                rightGradientColor: 0xffff86
+                leftGradientColor: 0xff9e21,
+                rightGradientColor: 0xeb0f67
+                
             )
         )
         scoreLines.append(
@@ -58,13 +59,14 @@ open class BestScoreView: MacawView {
                     (x: 130.0, y: 70.0),
                     (x: 160.0, y: 60.0),
                     (x: 180.0, y: 100.0),
-                    (x: 200.0, y: 30.0),
+                    (x: 200.0, y: 70.0),
                     (x: 220.0, y: 90.0),
                     (x: 230.0, y: 100.0),
                     (x: 240.0, y: 80.0)
                 ],
-                leftGradientColor: 0x10ffff,
-                rightGradientColor: 0xbbccff
+                leftGradientColor: 0xff7200,
+                rightGradientColor: 0xffff86
+                
             )
         )
         scoreLines.append(
@@ -85,8 +87,8 @@ open class BestScoreView: MacawView {
                     (x: 220.0, y: 120.0),
                     (x: 240.0, y: 110.0)
                 ],
-                leftGradientColor: 0xff9e21,
-                rightGradientColor: 0xeb0f67
+                leftGradientColor: 0x10ffff,
+                rightGradientColor: 0xbbccff
             )
         )
         
@@ -171,7 +173,7 @@ open class BestScoreView: MacawView {
         let chartCenterX = viewCenterX - (Double(chartWidth / 2) + Double(milesCaptionWidth / 2))
         
         let text = Text(
-            text: "Best Score",
+            text: "Hearth rate calculating",
             font: Font(name: "System Ultra Light", size: 24),
             fill: Color(val: 0x74F9FD)
         )

@@ -17,6 +17,6 @@ final class BodyConditionsManager {
     var bodyConditions = [BodyCondition]()
     
     func createDummy() {
-        self.bodyConditions = [BodyCondition(date: Date(), weight: 82, height: 184, chest: 70, biceps: 24, image: UIImage(named: "BodyCondition")),BodyCondition(date: Date(), weight: 50, height: 50, chest: 40, biceps: 20, image: UIImage(named: "Taras Vitoshko small")),BodyCondition(date: Date(), weight: 20, height: 20, chest: 20, biceps: 110, image: UIImage(named: "BackGroundLogo"))]
+        self.bodyConditions = [BodyCondition(date: Date(), weight: 150, height: 184, chest: 70, biceps: 14, image: UIImage(named: "BadBodyCondition")),BodyCondition(date: Date(), weight: 80, height: 184, chest: 40, biceps: 80, image: UIImage(named: "BodyCondition")),BodyCondition(date: Date(), weight: 100, height: 190, chest: 80, biceps: 110, image: UIImage(named: "GoodBodyCondition"))]
     }
 }
