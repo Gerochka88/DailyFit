@@ -15,16 +15,17 @@ import UIKit
 class ExercisesModel {
     
     var title = ""
-    var subTitle = ""
+    var muscleType = ""
     var image: UIImage?
     var description = ""
 
     
-    init(title: String, subTitle: String, image: UIImage?, description: String) {
+    init(title: String, muscleType: String, image: UIImage?, description: String) {
         self.title = title
-        self.subTitle = subTitle
+        self.muscleType = muscleType
         self.image = image
         self.description = description
 
     }
 }
+

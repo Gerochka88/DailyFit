@@ -26,7 +26,7 @@ class ExercisesTableViewCell: UITableViewCell {
     func setup(exerciseModel: ExercisesModel)
     {
         titleLabel.text = exerciseModel.title
-        subtitleLabel.text = exerciseModel.subTitle
+        subtitleLabel.text = exerciseModel.muscleType
         exercisesImage.image = exerciseModel.image
     }
 }

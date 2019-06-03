@@ -57,6 +57,7 @@ class BodyConditionsVC: UIViewController, UIImagePickerControllerDelegate, UINav
         configureCollectionView()
         self.bodyConditions = BodyConditionsManager.shared.bodyConditions
         self.bodyConditionsCollectionView.reloadData()
+        
         configureUI(for: 0)
     }
     

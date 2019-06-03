@@ -25,7 +25,7 @@ class ExercisesDetailVC: UIViewController {
     func setUI(){
         exercisesPictureView.image = exercise?.image
         exercisesTitleLabel.text = exercise?.title
-        exercisesSubtitleView.text = exercise?.subTitle
+        exercisesSubtitleView.text = exercise?.muscleType
         exercisesDecriptionTextView.text = exercise?.description
         
     }

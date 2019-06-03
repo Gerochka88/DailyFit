@@ -37,12 +37,12 @@ class SettingsVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewDidAppear(_ animated: Bool) {
         //MARK:- HK authorization
         autorizeHealthKit()
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         //MARK:- Getting Data
         let (age, blood, biologicalSex) = self.readProfile()

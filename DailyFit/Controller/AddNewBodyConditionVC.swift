@@ -42,6 +42,16 @@ class AddNewBodyConditionVC: UIViewController {
         self.imgBodyCondition.addGestureRecognizer(TapGesture)
 
     }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
+    }
+    func numberEnterOnly(replacementString string: String) -> Bool {
+        let inverseSet = CharacterSet(charactersIn:"0123456789.").inverted
+        let components = string.components(separatedBy: inverseSet)
+        let filtered = components.joined(separator: "")
+        return string == filtered
+    }
 
 }
 //Added image picker controller
