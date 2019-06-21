@@ -27,4 +27,7 @@ struct Alert {
     static func showIncompleteField(on vc: UIViewController){
         showBasicAlert(on: vc, with: "Error", message: "Please fill all the fields.")
     }
+    static func showSuccessRegistration(on vc: UIViewController){
+        showBasicAlert(on: vc, with: "Success", message: "Registration succeded.")
+    }
 }

@@ -67,4 +67,3 @@ class ExercisesVC: UIViewController {
             return 130
         }
 }
-

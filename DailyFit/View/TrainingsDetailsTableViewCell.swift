@@ -26,9 +26,9 @@ class TrainingsDetailsTableViewCell: UITableViewCell {
     func setup(exerciseModel: ExercisesModel)
     {
         exerciseNameLabel.text = exerciseModel.title
-        setsLabel.text = "4"
-        repeatsLabel.text = "10"
-        weightLabel.text = "80kg"
+        setsLabel.text = String(exerciseModel.sets)
+        repeatsLabel.text = String(exerciseModel.repeats)
+        weightLabel.text = String(exerciseModel.weight)
     }
  
 }

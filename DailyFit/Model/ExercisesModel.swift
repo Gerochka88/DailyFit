@@ -18,13 +18,19 @@ class ExercisesModel {
     var muscleType = ""
     var image: UIImage?
     var description = ""
+    var sets = 0
+    var repeats = 0
+    var weight = 0
 
     
-    init(title: String, muscleType: String, image: UIImage?, description: String) {
+    init(title: String, muscleType: String, image: UIImage?, description: String, sets: Int, repeats: Int, weight: Int) {
         self.title = title
         self.muscleType = muscleType
         self.image = image
         self.description = description
+        self.sets = sets
+        self.repeats = repeats
+        self.weight = weight
 
     }
 }

@@ -20,8 +20,8 @@ class WorkOutDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tableView.dataSource = self
-//        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.delegate = self
         setUI()
         tableView.reloadData()
     
@@ -35,23 +35,24 @@ class WorkOutDetailsVC: UIViewController {
     }
     
 }
-//MARK:- Tabble Data init
-//extension WorkOutDetailsVC : UITableViewDataSource , UITableViewDelegate {
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return ExerciseManager.exerciseModels.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "detailcell") as! ExercisesTableViewCell
-//
-//        cell.setup(exerciseModel: ExerciseManager.exerciseModels[indexPath.row])
-//
-//        return cell
-//    }
-//
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 130
-//    }
-//}
+//:-MARK:- Tabble Data init
+
+extension WorkOutDetailsVC : UITableViewDataSource , UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ExerciseManager.exerciseModels.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "detailcell") as! TrainingsDetailsTableViewCell
+
+        cell.setup(exerciseModel: ExerciseManager.exerciseModels[indexPath.row])
+
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+}
 

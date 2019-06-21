@@ -105,6 +105,7 @@
 		73D4AC222254EBCF005259DF /* ExerciseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC202254EBCF005259DF /* ExerciseFunction.swift */; };
 		73D4AC232254EBCF005259DF /* ExercisesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC212254EBCF005259DF /* ExercisesModel.swift */; };
 		73D4AC272254ECF3005259DF /* DashBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC262254ECF3005259DF /* DashBoardVC.swift */; };
+		73E9CA8E22BD061B008EA67B /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E9CA8D22BD061B008EA67B /* RegistrationVC.swift */; };
 		C74A486D9D07C0B4A3D3EC94 /* Pods_DailyFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB6781786BD3ED5FFC268FE /* Pods_DailyFit.framework */; };
 /* End PBXBuildFile section */
 
@@ -210,6 +211,7 @@
 		73D4AC202254EBCF005259DF /* ExerciseFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseFunction.swift; sourceTree = "<group>"; };
 		73D4AC212254EBCF005259DF /* ExercisesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesModel.swift; sourceTree = "<group>"; };
 		73D4AC262254ECF3005259DF /* DashBoardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardVC.swift; sourceTree = "<group>"; };
+		73E9CA8D22BD061B008EA67B /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		834B2A85B281BDDE33324FB0 /* Pods-DailyFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyFit.release.xcconfig"; path = "Target Support Files/Pods-DailyFit/Pods-DailyFit.release.xcconfig"; sourceTree = "<group>"; };
 		8AF9DDDF4B8680F8B79B9E3E /* Pods-DailyFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyFit.debug.xcconfig"; path = "Target Support Files/Pods-DailyFit/Pods-DailyFit.debug.xcconfig"; sourceTree = "<group>"; };
 		ACB6781786BD3ED5FFC268FE /* Pods_DailyFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -408,6 +410,7 @@
 				73523AFE229C83E70009BBBF /* AddNewExerciseVС.swift */,
 				7303ABF122A4487E007F9357 /* WorkOutVC.swift */,
 				7303ABFF22A47724007F9357 /* WorkOutDetailsVC.swift */,
+				73E9CA8D22BD061B008EA67B /* RegistrationVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -673,6 +676,7 @@
 				73D4AC1C2254EB83005259DF /* UILabelX.swift in Sources */,
 				257DFC1622662998008B762F /* String.swift in Sources */,
 				73AF5D0322425A5500B201D1 /* Constants.swift in Sources */,
+				73E9CA8E22BD061B008EA67B /* RegistrationVC.swift in Sources */,
 				257DFC2122662998008B762F /* UINavigationController.swift in Sources */,
 				737585EE229F24E500DA5859 /* CalendarHeaderView.swift in Sources */,
 				737585F3229F24E500DA5859 /* EventsManager.swift in Sources */,

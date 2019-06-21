@@ -21,7 +21,7 @@ class AddNewExerciseVС: UIViewController {
         if(exerciseNameTextField.text == "" || exerciseTypeTextField.text == "" || exerciseDecriptionTextView.text == ""){
             Alert.showIncompleteField(on: self) }
         else {
-            ExerciseFunction.addData(exerciseModel: ExercisesModel(title: exerciseNameTextField.text!, muscleType: exerciseTypeTextField.text!, image: exerciseImageView.image, description: exerciseDecriptionTextView.text!))
+            ExerciseFunction.addData(exerciseModel: ExercisesModel(title: exerciseNameTextField.text!, muscleType: exerciseTypeTextField.text!, image: exerciseImageView.image, description: exerciseDecriptionTextView.text!, sets: 2, repeats: 2, weight: 80))
             
             navigationController?.popViewController(animated: true)
         }
